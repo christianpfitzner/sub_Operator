@@ -1,0 +1,9 @@
+#gripper interface
+gripper_interface:
+  update_rate: 30.0
+  gripper_position_min: -0.35
+  gripper_position_max: 1.57
+  gripper_max_speed: 0.5
+  joints:
+    - joint_gripper_1
+    - joint_gripper_2    

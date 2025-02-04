@@ -1,0 +1,38 @@
+[35m[1mScanning dependencies of target filter_depth[0m
+[  5%] [32mBuilding CXX object CMakeFiles/static_tf_recon.dir/src/static_tf_recon.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/filter_depth.dir/src/filter_depth.cpp.o[0m
+[35m[1mScanning dependencies of target filter_stat_outliers[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/filter_stat_outliers.dir/src/filter_stat_outliers.cpp.o[0m
+[35m[1mScanning dependencies of target ohm_pcl_filters_gencfg[0m
+[ 23%] [34m[1mGenerating dynamic reconfigure files from cfg/ReconfigureStatOutliers.cfg: /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureStatOutliersConfig.h /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/python3/dist-packages/ohm_pcl_filters/cfg/ReconfigureStatOutliersConfig.py[0m
+Generating reconfiguration files for ReconfigureStatOutliers in ohm_pcl_filters
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureStatOutliersConfig.h
+[ 29%] [34m[1mGenerating dynamic reconfigure files from cfg/ReconfigureDepthFilter.cfg: /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureDepthFilterConfig.h /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/python3/dist-packages/ohm_pcl_filters/cfg/ReconfigureDepthFilterConfig.py[0m
+Generating reconfiguration files for ReconfigureDepthFilter in ohm_pcl_filters
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureDepthFilterConfig.h
+[ 35%] [34m[1mGenerating dynamic reconfigure files from cfg/ReconfigureCropBoxFilter.cfg: /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureCropBoxFilterConfig.h /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/python3/dist-packages/ohm_pcl_filters/cfg/ReconfigureCropBoxFilterConfig.py[0m
+Generating reconfiguration files for ReconfigureCropBoxFilter in ohm_pcl_filters
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureCropBoxFilterConfig.h
+[ 41%] [34m[1mGenerating dynamic reconfigure files from cfg/ReconfigureBaseTf.cfg: /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureBaseTfConfig.h /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/python3/dist-packages/ohm_pcl_filters/cfg/ReconfigureBaseTfConfig.py[0m
+Generating reconfiguration files for ReconfigureBaseTf in ohm_pcl_filters
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_pcl_filters/include/ohm_pcl_filters/ReconfigureBaseTfConfig.h
+[35m[1mScanning dependencies of target cloud_transformer[0m
+[ 41%] Built target ohm_pcl_filters_gencfg
+[35m[1mScanning dependencies of target filter_cropbox[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/cloud_transformer.dir/src/cloud_transformer.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/filter_cropbox.dir/src/cropbox_filter.cpp.o[0m
+[35m[1mScanning dependencies of target filter_ground_plane[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/filter_ground_plane.dir/src/filter_ground_plane.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/filter_ground_plane.dir/src/FilterPCLPlane.cpp.o[0m
+[ 70%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/static_tf_recon[0m
+[ 70%] Built target static_tf_recon
+[ 76%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/filter_ground_plane[0m
+[ 76%] Built target filter_ground_plane
+[ 82%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/filter_depth[0m
+[ 88%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/filter_cropbox[0m
+[ 88%] Built target filter_depth
+[ 88%] Built target filter_cropbox
+[ 94%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/filter_stat_outliers[0m
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_pcl_filters/lib/ohm_pcl_filters/cloud_transformer[0m
+[100%] Built target cloud_transformer
+[100%] Built target filter_stat_outliers

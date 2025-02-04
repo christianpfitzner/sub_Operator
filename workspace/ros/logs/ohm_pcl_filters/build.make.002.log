@@ -1,0 +1,7 @@
+[ 23%] Built target ohm_pcl_filters_gencfg
+[ 41%] Built target static_tf_recon
+[ 47%] Built target filter_depth
+[ 58%] Built target filter_cropbox
+[ 70%] Built target filter_stat_outliers
+[ 88%] Built target filter_ground_plane
+[100%] Built target cloud_transformer

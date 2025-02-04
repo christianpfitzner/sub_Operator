@@ -1,0 +1,5 @@
+Firmware for the OpenCM9.04 board used to control the inspector
+Makefile description:
+Use "make" to build the project
+Use "make flash" to flash the program to an OpenCM board -> the port can be changed in core/robotis-loader
+Use "make clean" to clean up project -> use make clean before commit with git!

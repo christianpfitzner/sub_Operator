@@ -1,0 +1,40 @@
+#ifndef clock__clock_H
+#define clock__clock_H
+
+#include <rqt_gui_cpp/plugin.h>
+#include "ui_clock.h"
+#include <QtWidgets/QWidget>
+#include <ros/ros.h>
+#include <QtCore/QTimer>
+
+
+namespace my_clock {
+
+class clock : public rqt_gui_cpp::Plugin
+{
+  Q_OBJECT
+public:
+  clock();
+  virtual void initPlugin(qt_gui_cpp::PluginContext& context);
+  virtual void shutdownPlugin();
+  virtual void saveSettings(qt_gui_cpp::Settings& plugin_settings, qt_gui_cpp::Settings& instance_settings) const;
+  virtual void restoreSettings(const qt_gui_cpp::Settings& plugin_settings, const qt_gui_cpp::Settings& instance_settings);
+
+public slots:
+  void updateClock(void);
+  void button_start_stop(void);
+  void button_reset(void);
+  // Comment in to signal that the plugin has a way to configure it
+  //bool hasConfiguration() const;
+  //void triggerConfiguration();
+
+private:
+  Ui::Form* ui_;
+  QWidget* widget_;
+  QTimer *timer;
+  unsigned int seconds, minutes;
+  bool run_timer;
+  unsigned int time_sig1, time_sig2;
+};
+} // namespace
+#endif // my_namespace__my_plugin_H

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdf_config>
+  <trials>100</trials> 
+  <epsthresh>0.15f</epsthresh>
+  <sizeControlSet>360</sizeControlSet>
+  <zhit>0.2</zhit>
+  <zphi>0.2</zphi>
+  <zshort>0.2</zshort>
+  <zmax>0.2</zmax>
+  <zrand>0.25</zrand>
+  <percentage_points_inc>0.6</percentage_points_inc>
+  <rangemax>30.0</rangemax>
+  <sigphi>0.052</sigphi>
+  <sighit>0.1</sighit>
+  <lamshort>0.08</lamshort>
+  <max_angle_diff>1.5</max_angle_diff>
+  <max_angle_penalty>0.5</max_angle_penalty>
+  <ranphimax>45.0</ranphimax>
+  <reg_trs_max>1.0</reg_trs_max>   <!-- this parameter is not used in obviously -->
+</pdf_config>
+

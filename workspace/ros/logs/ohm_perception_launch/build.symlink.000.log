@@ -1,0 +1,3 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_perception_launch/cmake/ohm_perception_launchConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_perception_launch/cmake/ohm_perception_launchConfig.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_perception_launch.pc

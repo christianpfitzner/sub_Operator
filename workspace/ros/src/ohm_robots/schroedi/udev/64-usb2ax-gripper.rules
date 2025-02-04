@@ -1,0 +1,2 @@
+KERNEL=="ttyACM[0-9]*", SUBSYSTEM=="tty", ATTRS{idProduct}=="06a7",  ATTRS{idVendor}=="16d0", ATTRS{serial}=="74031303437351804191", SYMLINK+="gripper_dxl"  
+#, ATTRS{product}=="USB2AX", SUBSYSTEMS=="usb",

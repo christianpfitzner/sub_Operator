@@ -1,0 +1,16 @@
+int32 track_right_rpm_ret
+int32 track_left_rpm_ret
+int32 flipper_front_right_ticks_ret
+int32 flipper_front_left_ticks_ret
+int32 flipper_rear_right_ticks_ret
+int32 flipper_rear_left_ticks_ret
+uint8 track_right_mot1_cur_ret
+uint8 track_right_mot2_cur_ret
+uint8 track_left_mot1_cur_ret
+uint8 track_left_mot2_cur_ret
+uint8 flipper_front_right_cur_ret
+uint8 flipper_front_left_cur_ret
+uint8 flipper_rear_right_cur_ret
+uint8 flipper_rear_left_cur_ret
+uint16 voltage
+uint32 error

@@ -1,0 +1,7 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_joy/cmake/ohm_joyConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_joy/cmake/ohm_joyConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/ohm_joy/ohm_joy_rough_node
+Symlinking /home/user/workspace/ros/devel/lib/ohm_joy/ohm_joy_advanced
+Symlinking /home/user/workspace/ros/devel/lib/ohm_joy/ohm_joy_node
+Symlinking /home/user/workspace/ros/devel/lib/ohm_joy/ohm_joy_config
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_joy.pc

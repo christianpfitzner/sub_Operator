@@ -1,0 +1,5 @@
+ohm_robots/schroedi
+/home/user/workspace/ros/devel/.private/schroedi/cmake.lock /home/user/workspace/ros/devel/./cmake.lock
+/home/user/workspace/ros/devel/.private/schroedi/share/schroedi/cmake/schroediConfig-version.cmake /home/user/workspace/ros/devel/share/schroedi/cmake/schroediConfig-version.cmake
+/home/user/workspace/ros/devel/.private/schroedi/share/schroedi/cmake/schroediConfig.cmake /home/user/workspace/ros/devel/share/schroedi/cmake/schroediConfig.cmake
+/home/user/workspace/ros/devel/.private/schroedi/lib/pkgconfig/schroedi.pc /home/user/workspace/ros/devel/lib/pkgconfig/schroedi.pc

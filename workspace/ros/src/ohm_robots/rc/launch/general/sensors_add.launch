@@ -1,0 +1,37 @@
+<launch>  
+	<!--QR Kamera 1-->
+  	<node pkg="ohm_uvc" type="uvc_node" name="cam_left">
+    <param name="device"          value="/dev/video3"         type="string" /> 
+    <param name="image_topic"     value="image/left"          type="string" /> 
+    
+    <!-- normal  -->
+    <param name="width"           value="640"                 type="int"    /> 
+    <param name="height"          value="480"                 type="int"    /> 
+    
+    <!-- parameters for reconfigure -->
+    <param name="framerate"       value="20"                  type="int"    /> 
+    <param name="pl_freq"         value="1"                   type="int"    /> 
+    <param name="saturation"      value="0"                   type="int"    /> 
+    <param name="contrast"        value="128"                 type="int"    /> 
+    <param name="sharpness"       value="0"                   type="int"    /> 
+  </node>  
+  
+  <!--QR Kamera 2-->
+  <node pkg="ohm_uvc" type="uvc_node" name="cam_right">
+    <param name="device"          value="/dev/video4"         type="string" /> 
+    <param name="image_topic"     value="image/right"         type="string" /> 
+    
+    <!-- normal  -->
+    <param name="width"           value="640"                 type="int"    /> 
+    <param name="height"          value="480"                 type="int"    /> 
+    
+    <!-- parameters for reconfigure -->
+    <param name="framerate"       value="20"                  type="int"    /> 
+    <param name="pl_freq"         value="1"                   type="int"    /> 
+    <param name="saturation"      value="0"                   type="int"    /> 
+    <param name="contrast"        value="128"                 type="int"    /> 
+    <param name="sharpness"       value="0"                   type="int"    /> 
+  </node>  
+  
+    
+</launch>

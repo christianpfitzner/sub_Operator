@@ -1,0 +1,20 @@
+<library path="lib/libhorizon2">
+  <class name="horizon2" type="my_horizon2::horizon2" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Horizon2</label>
+      <icon type="theme">display-capplet</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target hall_visualization_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hall_visualization_node.dir/src/VisualizationNode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_visualization_hall/lib/ohm_visualization_hall/hall_visualization_node[0m
+[100%] Built target hall_visualization_node

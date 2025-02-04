@@ -1,0 +1,5 @@
+Symlinking /home/user/workspace/ros/devel/share/phros_remote/cmake/phros_remoteConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/phros_remote/cmake/phros_remoteConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/libphros_remote.so
+Symlinking /home/user/workspace/ros/devel/lib/phros_remote/menu_test
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/phros_remote.pc

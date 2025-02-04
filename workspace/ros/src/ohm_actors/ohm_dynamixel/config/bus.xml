@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>                              <!--  mode 0 = joint 1 = multiturn -->
+  <config baudrate="57200" port="/dev/ttyUSB0" protocol_version="1.0" scan_range="5"/>
+  <servo id="1" name="hirsch" speed="200" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1" mode = "0"/>
+  <servo id="2" name="horst"  speed="200" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1" mode = "0"/>
+  <servo id="3" name="depp"   speed="200" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1" mode = "0"/>
+</dynamixel-bus>
+
+<!-- 1000000  500000  200000 117647 57142 -->

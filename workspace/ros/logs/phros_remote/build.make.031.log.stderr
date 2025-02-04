@@ -1,0 +1,16 @@
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperArm.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperArm::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperArm.cpp:69:48:[m[K [01;31m[Kerror: [m[K‘[01m[KSTICK_Left_Y[m[K’ is not a member of ‘[01m[Kphros_remote::MapperPsPad::AxesPad[m[K’; did you mean ‘[01m[KSTICK_LEFT_Y[m[K’?
+   69 |   command.ze = msg->axis(MapperPsPad::AxesPad::[01;31m[KSTICK_Left_Y[m[K);//_msg->stickRightY();//joy.axes[A2_Y];
+      |                                                [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                [32m[KSTICK_LEFT_Y[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperArm.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperArm::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperArm.cpp:69:48:[m[K [01;31m[Kerror: [m[K‘[01m[KSTICK_Left_Y[m[K’ is not a member of ‘[01m[Kphros_remote::MapperPsPad::AxesPad[m[K’; did you mean ‘[01m[KSTICK_LEFT_Y[m[K’?
+   69 |   command.ze = msg->axis(MapperPsPad::AxesPad::[01;31m[KSTICK_Left_Y[m[K);//_msg->stickRightY();//joy.axes[A2_Y];
+      |                                                [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                [32m[KSTICK_LEFT_Y[m[K
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:341: CMakeFiles/menu_test.dir/src/mappers/MapperArm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:298: CMakeFiles/phros_remote.dir/src/mappers/MapperArm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,111 @@
+<launch>
+<!-- 	<node pkg="ohm_qr_detection" type="ohm_qr_detection_node" name="ohm_qr_detection_left_camera_node" output="screen">
+		<param name="qr_topic"                	type="string" value="/qr/pose_left_cam"/>
+		<param name="cam_subscriber_topic"   	type="string" value="/georg/image/left"/>
+		<param name="cam_publisher_topic"    	type="string" value="image/qr_detection_left"/>
+		<param name="cam_width"               	type="int" value="640"/>
+		<param name="cam_height"              	type="int" value="480"/>
+		<param name="rate" 					  	type="double" value="5.0	"/>
+		<param name="robot_radius"              type="double" value="0.3"/>
+	</node>		 
+
+	<node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_to_world_left_camera_node" output="screen">
+		<param name="qr_topic"                  type="string"  value="/qr/pose_left_cam"/>
+		<param name="laser_topic"               type="string"  value="/georg/scan"/>
+		<param name="tf_qr_frame"               type="string"  value="/tf_qr_left"/>
+		<param name="tf_laser_frame"            type="string"  value="georg/laser"/>
+		<param name="tf_cam_frame"         		type="string"  value="georg/camera/left"/>
+		<param name="tf_map_frame"              type="string"  value="map"/>
+		<param name="qr_intersection_frame"     type="string"  value="/qr/candidate"/>
+	</node>		
+
+	
+ 	<node pkg="ohm_qr_detection" type="ohm_qr_detection_node" name="ohm_qr_detection_right_camera_node" output="screen">	
+		<param name="qr_topic"                 	type="string" value="/qr/pose_right_cam"/>
+		<param name="cam_subscriber_topic"     	type="string" value="/georg/image/right"/>
+		<param name="cam_publisher_topic"      	type="string" value="image/qr_detection_right"/>
+		<param name="cam_width"               	type="int" value="640"/>
+		<param name="cam_height"               	type="int" value="480"/>
+		<param name="rate" 						type="double" value="5.0	"/>
+		<param name="robot_radius"              type="double" value="0.3"/>
+	</node> 
+	
+	<node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_to_world_right_camera_node" output="screen">
+		<param name="qr_topic"                  type="string"  value="/qr/pose_right_cam"/>
+		<param name="laser_topic"               type="string"  value="/georg/scan"/>
+		<param name="tf_qr_frame"               type="string"  value="/tf_qr_rigt"/>
+		<param name="tf_laser_frame"            type="string"  value="georg/laser"/>
+		<param name="tf_cam_frame"         		type="string"  value="georg/camera/right"/>
+		<param name="tf_map_frame"              type="string"  value="map"/>
+		<param name="qr_intersection_frame"     type="string"  value="/qr/candidate"/>
+	</node>		-->
+	
+	<!--<node pkg="ohm_qr_detection" type="ohm_qr_stack_node" name="ohm_qr_stack_node" output="screen">
+		<param name="qr_intersection_frame"        	type="string"  value="/qr/candidate"/>
+		<param name="qr_markers_topic"        		type="string"  value="/qr/markers"/>
+		<param name="qr_txt_adress"        			type="string"  value="/home/jon/catkin_ws/src/ohm_perception/src/ohm_qr_detection/QrCodesLocalization.txt"/>
+	</node>	-->
+	
+	<arg name="with_camera" default="false"/>
+   <arg name="with_viewer" default="false"/>
+   
+   <arg name="input_image_topic" default="/img_rotated"/>
+   <arg name="img_qr_topic"      default="img_qr"/>
+
+   <group if="$(arg with_camera)">
+     <node pkg="usb_cam" type="usb_cam_node" name="/camera/color/image_raw">
+       <param name="camera_name"     value="driver_cam" />
+       <param name="camera_frame_id" value="driver_cam" />
+       <param name="pixel_format"    value="yuyv"       />
+       
+       <remap from="/usb_cam/image_raw" to="$(arg input_image_topic)"/>
+     </node>
+   </group>
+	
+	<node pkg="ohm_qr_detection" type="ohm_qr_detection_node" name="qr_sensor_test_node" output="screen">
+		<param name="qr_topic"                  type="string" value="/qr/pose "/>
+		<param name="cam_subscriber_topic"   	  type="string" value="$(arg input_image_topic)"/>
+		<param name="cam_publisher_topic"       type="string" value="$(arg img_qr_topic)"/>
+		<param name="robot_radius"              type="double" value="0.3"/>
+	</node>	
+	
+		
+	<node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_to_world_camera_node" output="screen">
+		<param name="qr_topic"                  type="string"  value="/qr/pose"/>
+		<param name="laser_topic"               type="string"  value="/camera/depth_registered/points"/>
+		<param name="tf_qr_frame"               type="string"  value="/tf_qr"/>
+		<param name="tf_laser_frame"            type="string"  value="/camera_color_optical_frame"/>
+		<param name="tf_cam_frame"              type="string"  value="/camera_color_optical_frame"/>
+		<param name="tf_map_frame"              type="string"  value="/map"/>
+		<param name="qr_intersection_frame"     type="string"  value="/qr/candidate"/>
+		<param name="output_topic"     		type="string"  value="/transformed_cloud"/>
+
+	</node>		
+
+	<node pkg="ohm_qr_detection" type="ohm_qr_detection_node" name="qr_sensor_test_node_xtion" output="screen">
+		<param name="qr_topic"                  type="string" value="/qr/pose "/>
+		<param name="cam_subscriber_topic"   	  type="string" value="/camera/rgb/image_raw"/>
+		<param name="cam_publisher_topic"       type="string" value="$(arg img_qr_topic)"/>
+		<param name="robot_radius"              type="double" value="0.3"/>
+	</node>	
+	
+		
+	<node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_to_world_camera_node_xtion" output="screen">
+		<param name="qr_topic"                  type="string"  value="/qr/pose"/>
+		<param name="laser_topic"               type="string"  value="/pcl"/>
+		<param name="tf_qr_frame"               type="string"  value="/tf_qr"/>
+		<param name="tf_laser_frame"            type="string"  value="/camera_color_optical_frame"/>
+		<param name="tf_cam_frame"              type="string"  value="/camera_color_optical_frame"/>
+		<param name="tf_map_frame"              type="string"  value="/map"/>
+		<param name="qr_intersection_frame"     type="string"  value="/qr/candidate"/>
+		<param name="output_topic"     		type="string"  value="/transformed_cloud"/>
+
+	</node>
+	
+	<node pkg="ohm_qr_detection" type="ohm_qr_stack_node" name="ohm_qr_stack_node" output="screen">
+		<param name="qr_intersection_frame"       type="string"  value="/qr/candidate"/>
+		<param name="qr_markers_topic"        		type="string"  value="/qr/markers"/>
+		<param name="qr_txt_adress"        			type="string"  value="/home/jon/catkin_ws/src/ohm_perception/src/ohm_qr_detection/QrCodesLocalization.txt"/>
+	</node>
+	<node pkg="tf"  type="static_transform_publisher" name = "tf_niiice" args = "0 0 0 0 0 1.57 frame_rs nice_rs 10"/>
+</launch>

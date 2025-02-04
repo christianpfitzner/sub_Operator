@@ -1,0 +1,10 @@
+<launch>
+  <node name = "phros_remote" pkg = "rqt_gui" type = "rqt_gui" respawn = "false" output = "screen" args = "--perspective-file $(find phros_remote)/config/remote.perspective"/>
+    <!-- <param name = "heini/topic_twist" type = "string" value = "cmd_vel"/> -->
+  <!--</node>  -->
+
+  <node pkg="joy"     type="joy_node"        name="joy_node">
+                <param name="autorepeat_rate" value="20.0"/>
+        <param name="dev" value="/dev/input/js0"/>
+        </node>
+</launch>

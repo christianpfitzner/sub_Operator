@@ -1,0 +1,20 @@
+<library path="lib/libexploration">
+  <class name="ExplorationPlugin" type="exploration::ExplorationPlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An example CPP GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Exploration</label>
+      <icon type="theme">display-capplet</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

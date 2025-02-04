@@ -1,0 +1,45 @@
+{
+    "switchMapper": 10,
+    "drive" : {
+        "driveForward": 5,
+        "driveBackward": 4,
+        "turnLeft/Right": 3,
+        
+        "sensorHeadPitch": 3,
+        "sensorHeadYaw": 2,
+        "SensorHeadHome": 12,
+
+        "flipperPresetCompact": 14,
+        "flipperPresetWShape": 13,
+        
+        "moveFlipperUp": 15,
+        "moveFlipperDown": 16,
+        "selectFlipperFrontLeft": 2,
+        "selectFlipperFrontRight": 1,
+        "selectFlipperBackLeft": 3,
+        "selectFlipperBackRight": 0,
+
+        "switchDriveMode1": 5,
+        "switchDriveMode2": 4
+    },
+
+    "arm" : {
+        "moveArmForward/Backward": 0,
+        "moveArmLeft/Right": 0,
+        "moveArmUp/Down": 0,
+
+        "openGripper": 0,
+        "closeGripper": 0,
+        "rotateGripperRight": 0,
+        "rotateGripperLeft": 0,
+
+        "rotateWristLeft": 0,
+        "rotateWristRight": 0,
+        "rotateWristUp": 0,
+        "rotateWristDown": 0,
+
+        "lookOnInspectionBoard": 0,
+        "armUpHome": 0,
+        "armFold": 0
+    }
+}

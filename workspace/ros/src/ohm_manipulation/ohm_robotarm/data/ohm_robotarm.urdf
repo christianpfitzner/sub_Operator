@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<robot name="ohm_robotarm">
+
+<!--  Base Frame anpassen an TF Baum -->
+<link name="base_link" >
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+</link>
+
+
+<link name="chassi">
+	<visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+		<geometry>
+                        <mesh filename="package://ohm_robotarm/data/collada/10.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+                        <mesh filename="package://ohm_robotarm/data/collada/10.dae" scale="1 1 1"/>
+		</geometry>
+		<origin xyz="0 0 0" rpy="0 0 0" />
+	</collision>	
+</link>
+
+<joint name="base_footprint_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+  <child link="chassi"/>
+  <parent link="base_link"/>
+</joint>
+
+<!--  - - - - - - - - - -  -->
+<!--  Start Manipulator    -->
+<!--  - - - - - - - - - -  -->
+
+
+<link name="schwenkplattform">
+   <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/20.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <origin xyz="0 0 0" rpy="0 0 3.14159" />
+      <geometry>
+          <mesh filename="package://ohm_robotarm/data/collada/20.dae" scale="1 1 1"/>
+      </geometry>    
+   </collision>   
+   <limit effort="30.0" velocity="0.5"/>
+</link>
+
+<joint name="joint_1" type="continuous">
+   <parent link="chassi"/>
+   <child link="schwenkplattform"/>
+   <origin xyz="0 0 0.231" rpy="0 0 0"/>
+   <axis xyz="0 0 1" rpy="0 0 0"/>
+   <limit effort="65.0" velocity="0.5"/>
+</joint>
+
+<link name="link_1">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/30.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+          <mesh filename="package://ohm_robotarm/data/collada/30.dae" scale="1 1 1"/>
+      </geometry>
+                <!--  <origin xyz="-0.0259 0 0.1989" rpy="0 0 0"/> -->
+   </collision>
+</link>
+
+<joint name="joint_2" type="revolute">
+   <parent link="schwenkplattform"/>
+   <child link="link_1"/>
+   <origin xyz="-0.115 -0.05 0.087942" rpy="0 0 0"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>x
+   <limit effort="65.0" velocity="0.5" lower="-2.42" upper="0"/>
+</joint>
+
+
+<link name="link_2">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/40.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/40.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="-0.0312 0.00 0.23" rpy="0 0 0"/>
+   </collision>
+</link>
+
+<joint name="joint_3" type="revolute">
+   <parent link="link_1"/>
+   <child link="link_2"/>
+      <origin xyz="0.385 0.0498 0" rpy="0 0 0"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <limit effort="35.0" velocity="0.5" lower="0" upper="4.71"/>
+</joint>
+
+<link name="link_3">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/50.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+        <!-- <origin xyz="-0.0298 0.0 0.213" rpy="0 0 0" /> -->
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/50.dae" scale="1 1 1"/>
+      </geometry>
+   </collision>
+</link>
+<joint name="joint_4" type="revolute">
+   <parent link="link_2"/>
+   <child link="link_3"/>
+   <origin xyz="0.4576 0.0773 0" rpy="0 3.141 0"/>
+   <axis xyz="0 -1 0" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-4.71" upper="0.0"/>
+</joint>
+
+<link name="TCP_1">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/60.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+          <mesh filename="package://ohm_robotarm/data/collada/60.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+   </collision>
+</link>
+<joint name="joint_5" type="revolute">
+   <parent link="link_3"/>
+   <child link="TCP_1"/>
+   <origin xyz="0.447 0 0.0133" rpy="0 0 0"/>
+   <axis xyz="1 0 0" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-3.14" upper="3.14"/>
+</joint>
+
+<link name="TCP_2">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/70.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+          <mesh filename="package://ohm_robotarm/data/collada/70.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+   </collision>
+</link>
+<joint name="joint_6" type="revolute">
+   <parent link="TCP_1"/>
+   <child link="TCP_2"/>
+   <origin xyz="0.03 0 0.0" rpy="0 0 0"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-1.57" upper="1.57"/>
+</joint>
+
+<link name="TCP_3">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/80.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+        <mesh filename="package://ohm_robotarm/data/collada/80.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+   </collision>
+</link>
+<joint name="joint_7" type="revolute">
+   <parent link="TCP_2"/>
+   <child link="TCP_3"/>
+   <origin xyz="0.0395 0 0" rpy="0 0 0"/>
+   <axis xyz="1 0 0" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-3.14" upper="3.14"/>
+</joint>
+
+<link name="GR_1">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/90.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/90.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+   </collision>
+</link>
+<joint name="joint_gripper_1" type="revolute">
+   <parent link="TCP_3"/>
+   <child link="GR_1"/>
+   <origin xyz=" 0.0486 -0.042 -0.0072" rpy="0 0 0"/>
+   <axis xyz="0 0 1" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-1.57" upper="0.35"/>
+</joint>
+
+<link name="GR_2">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/90.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+   <collision>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/90.dae" scale="1 1 1"/>
+      </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+   </collision>
+</link>
+<joint name="joint_gripper_2" type="revolute">
+   <parent link="TCP_3"/>
+   <child link="GR_2"/>
+   <origin xyz="0.0486 0.042 -0.0072" rpy="0 0 0"/>
+   <axis xyz="0 0 1" rpy="0 0 0"/>
+   <limit effort="15.0" velocity="0.5" lower="-0.35" upper="1.57"/>
+</joint>
+
+
+<!--  - - - - - - - - - -  -->
+<!--  End Manipulator      -->
+<!--  - - - - - - - - - -  -->
+
+
+
+
+<!--  - - - - - - - - - -  -->
+<!--  Start Flipper TFs 4x -->
+<!--  - - - - - - - - - -  -->
+
+<link name="static_flipper_front_left">
+<geometry>
+<box size="0.001 0.001 0.001"/>
+</geometry>
+ <origin xyz="0 0 0" rpy="0 0 0" />
+</link>
+
+<joint name="flipper1" type="fixed">
+   <parent link="base_link"/>
+   <child link="static_flipper_front_left"/>
+   <origin xyz="0.38 0.21 0.105" />
+</joint>
+
+<link name="flipper_front_left">
+   <visual>
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/10_10.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+</link>
+
+<joint name="flipper_front_left_joint" type="continuous">
+   <parent link="static_flipper_front_left"/>
+   <child link="flipper_front_left"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+   <limit effort="65.0" velocity="0.5"/>
+</joint>
+
+
+
+<link name="static_flipper_front_right">
+ <origin xyz="0 0 0" rpy="0 0 0" />
+</link>
+
+<joint name="flipper2" type="fixed">
+   <parent link="base_link"/>
+   <child link="static_flipper_front_right"/>
+   <origin xyz="0.38 -0.21 0.105" />
+</joint>
+
+<link name="flipper_front_right">
+   <visual>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/10_10.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+</link>
+
+<joint name="flipper_front_right_joint" type="continuous">
+   <parent link="static_flipper_front_right"/>
+   <child link="flipper_front_right"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+   <limit effort="65.0" velocity="0.5"/>
+</joint>
+
+
+<link name="static_flipper_rear_right">
+ <origin xyz="0 0 0" rpy="0 0 0" />
+</link>
+
+<joint name="flipper3" type="fixed">
+   <parent link="base_link"/>
+   <child link="static_flipper_rear_right"/>
+   <origin xyz="-0.15 -0.21 0.105" />
+</joint>
+
+<link name="flipper_rear_right">
+   <visual>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/10_10.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+</link>
+
+<joint name="flipper_rear_right_joint" type="continuous">
+   <parent link="static_flipper_rear_right"/>
+   <child link="flipper_rear_right"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+   <limit effort="65.0" velocity="0.5"/>
+</joint>
+
+
+<link name="static_flipper_rear_left">
+ <origin xyz="0 0 0" rpy="0 0 0" />
+</link>
+
+<joint name="flipper4" type="fixed">
+   <parent link="base_link"/>
+   <child link="static_flipper_rear_left"/>
+   <origin xyz="-0.15 0.21 0.105" />
+</joint>
+
+<link name="flipper_rear_left">
+   <visual>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+         <mesh filename="package://ohm_robotarm/data/collada/10_10.dae" scale="1 1 1"/>
+      </geometry>
+   </visual>
+</link>
+
+<joint name="flipper_rear_left_joint" type="continuous">
+   <parent link="static_flipper_rear_left"/>
+   <child link="flipper_rear_left"/>
+   <axis xyz="0 1 0" rpy="0 0 0"/>
+   <origin xyz="0 0 0" rpy="0 0 0" />
+   <limit effort="65.0" velocity="0.5"/>
+</joint>
+
+<!--  - - - - - - - - - -  -->
+<!--  End Flipper TFs 4x -->
+<!--  - - - - - - - - - -  -->
+
+</robot>

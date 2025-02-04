@@ -1,0 +1,25 @@
+   <!-- Author: Christian Pfitzner -->
+   <!-- Date:   2015-03-12         -->
+   
+<launch>
+   <arg 	name="TFtime"     default="10" 		/>
+   <arg  name="tf_US_z"		default="0.12"	/>
+   
+   <!-- Basic tranformations for robot coordinate system -->
+   
+   <node pkg="tf" type="static_transform_publisher" name="link_laser_simon" args="-0.29 0 0 0 0 0             simon/laser          simon/base_link        $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_base"          args="0 0 0.29 0 0 0              simon/base_link      simon/base_footprint   $(arg TFtime)"/>
+                                                                                                              
+   <node pkg="tf" type="static_transform_publisher" name="tf_leftTrack"     args="0  0.23 -0.20 0 0 0         simon/base_link      simon/leftTrack        $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_rightTrack"    args="0 -0.23 -0.20 0 0 0         simon/base_link      simon/rightTrack       $(arg TFtime)"/>
+                                                                                                              
+   <node pkg="tf" type="static_transform_publisher" name="tf_sh_base"       args="0.06 0 0.25 0 0 0           simon/base_link                 simon/sensor_head/yaw/base   $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_sh_pitch"      args="0 0 -0.04 0 0 0             simon/sensor_head/yaw/rotated   simon/sensor_head/pitch/base $(arg TFtime)"/>
+      
+   <!-- cameras -->  
+   <node pkg="tf" type="static_transform_publisher" name="tf_qr_left"       args="0.31  0.12 -0.02  1.57 0 0  simon/base_link      simon/cam/left   $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_qr_right"      args="0.31 -0.12 -0.02 -1.57 0 0  simon/base_link      simon/cam/right  $(arg TFtime)"/>
+             
+      
+      
+</launch>

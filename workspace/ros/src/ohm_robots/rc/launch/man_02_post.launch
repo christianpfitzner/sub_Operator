@@ -1,0 +1,8 @@
+<launch>
+	<include file="general/tf.launch"/>
+	<include file="general/slam.launch"/>
+	<!--SLAM Parameter cell-size ändern-->
+	<param name = "cellsize"                type = "double" value = "0.02"  />
+	<include file="general/cortex.launch"/>
+	
+</launch>

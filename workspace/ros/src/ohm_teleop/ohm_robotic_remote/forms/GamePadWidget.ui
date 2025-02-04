@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GamePadWidget</class>
+ <widget class="QWidget" name="GamePadWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>251</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>405</width>
+    <height>251</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>405</width>
+    <height>251</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Control (GamePad)</string>
+  </property>
+  <widget class="QLabel" name="_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../src/picture/resource.qrc">:/gamepad/ps3-controller.png</pixmap>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonTriangle" native="true">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>43</y>
+     <width>29</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonX" native="true">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>103</y>
+     <width>29</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonSquare" native="true">
+   <property name="geometry">
+    <rect>
+     <x>271</x>
+     <y>73</y>
+     <width>29</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonO" native="true">
+   <property name="geometry">
+    <rect>
+     <x>338</x>
+     <y>73</y>
+     <width>29</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonStart" native="true">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>81</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonSelect" native="true">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>82</y>
+     <width>21</width>
+     <height>14</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonUp" native="true">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>54</y>
+     <width>26</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonRight" native="true">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>75</y>
+     <width>28</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonDown" native="true">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>93</y>
+     <width>27</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonLeft" native="true">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>75</y>
+     <width>29</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="GamePadButton" name="_buttonPS" native="true">
+   <property name="geometry">
+    <rect>
+     <x>187</x>
+     <y>97</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GamePadButton</class>
+   <extends>QWidget</extends>
+   <header>GamePadButton.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../src/picture/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

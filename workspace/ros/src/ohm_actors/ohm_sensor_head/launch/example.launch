@@ -1,0 +1,20 @@
+<launch>
+   <node name="sensor_head" pkg="ohm_sensor_head" type="sensor-head" output="screen">
+    <param name = "homing_yaw" type = "double" value = "0.517" />
+    <param name = "homing_pitch" type = "double" value = "-0.18" />
+    <param name="tf_target"              type="string" value="base_link"                     />
+    <param name="tf_source"              type="string" value="base_link"                            />
+    <param name="tf_sensor"              type="string" value="sensor_head/pitch/rotated"     />
+  <!-- <param name="topic_target_direction" type="string" value="goal/sensor_head"               />
+    <param name="topic_target_point"     type="string" value="goal/look_at_victim"            />
+    <param name="tf_target"              type="string" value="base_footprint"                     />
+    <param name="tf_source"              type="string" value="map"                            />
+    <param name="tf_yaw_source"          type="string" value="sensor_head/yaw/base"     />
+    <param name="tf_yaw_target"          type="string" value="sensor_head/yaw/rotated"  />
+    <param name="tf_pitch_source"        type="string" value="sensor_head/pitch/base"   />
+    <param name="tf_pitch_target"        type="string" value="sensor_head/pitch/rotated"/>
+    <param name="tf_sensor"              type="string" value="sensor_head/yaw/base"     />
+    <param name="service_mode"           type="string" value="sensor_head/mode"               /> -->
+  </node>
+
+</launch>

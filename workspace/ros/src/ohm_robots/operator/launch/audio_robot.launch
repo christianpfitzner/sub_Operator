@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- Play sound from operator-->
+  <node name="robot_audio_reciever_" pkg="audio_play" type="audio_play" output="screen">
+    <param name="dst" value="alsasink"/>
+    <remap from="audio" to="/audio_from_operator" />
+  </node>
+
+ <!-- Send sound to operator -->
+ <node name="robot_audio_transmitter" pkg="audio_capture" type="audio_capture" output="screen">
+    <param name="bitrate" value="64"/>
+    <param name="dst" value="appsink"/>
+    <remap from="audio" to="/audio_from_robot" />
+  </node>
+  
+
+
+</launch>

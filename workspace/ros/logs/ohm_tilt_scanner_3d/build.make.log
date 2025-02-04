@@ -1,0 +1,151 @@
+[35m[1mScanning dependencies of target ohm_sensors_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target ohm_tilt_scanner_3d_gencfg[0m
+[35m[1mScanning dependencies of target ohm_sensors_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target ohm_sensors_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  0%] Built target ohm_sensors_msgs_generate_messages_nodejs
+[ 14%] [34m[1mGenerating dynamic reconfigure files from cfg/ReconfigureScan.cfg: /home/user/workspace/ros/devel/.private/ohm_tilt_scanner_3d/include/ohm_tilt_scanner_3d/ReconfigureScanConfig.h /home/user/workspace/ros/devel/.private/ohm_tilt_scanner_3d/lib/python3/dist-packages/ohm_tilt_scanner_3d/cfg/ReconfigureScanConfig.py[0m
+[ 14%] Built target std_srvs_generate_messages_nodejs
+[ 14%] Built target ohm_sensors_msgs_generate_messages_lisp
+[ 14%] Built target ohm_sensors_msgs_generate_messages_py
+[ 14%] Built target std_srvs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_generate_messages_cpp[0m
+[ 14%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target tf_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[ 14%] Built target actionlib_generate_messages_cpp
+[35m[1mScanning dependencies of target tf_generate_messages_eus[0m
+[ 14%] Built target tf_generate_messages_cpp
+[ 14%] Built target rosgraph_msgs_generate_messages_lisp
+[ 14%] Built target geometry_msgs_generate_messages_lisp
+[ 14%] Built target actionlib_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_srvs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[ 14%] Built target tf_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[ 14%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[ 14%] Built target std_srvs_generate_messages_py
+[ 14%] Built target rosgraph_msgs_generate_messages_eus
+[ 14%] Built target roscpp_generate_messages_eus
+Generating reconfiguration files for ReconfigureScan in ohm_tilt_scanner_3d
+[ 14%] Built target roscpp_generate_messages_py
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_tilt_scanner_3d/include/ohm_tilt_scanner_3d/ReconfigureScanConfig.h
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[ 14%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[ 14%] Built target std_msgs_generate_messages_nodejs
+[ 14%] Built target roscpp_generate_messages_lisp
+[ 14%] Built target geometry_msgs_generate_messages_eus
+[ 14%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[ 14%] Built target actionlib_generate_messages_lisp
+[ 14%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_srvs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_cpp[0m
+[ 14%] Built target actionlib_msgs_generate_messages_eus
+[ 14%] Built target std_srvs_generate_messages_cpp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[35m[1mScanning dependencies of target ohm_sensors_msgs_generate_messages_eus[0m
+[ 14%] Built target dynamic_reconfigure_generate_messages_lisp
+[ 14%] Built target ohm_tilt_scanner_3d_gencfg
+[ 14%] Built target dynamic_reconfigure_generate_messages_py
+[ 14%] Built target tf2_msgs_generate_messages_cpp
+[ 14%] Built target ohm_sensors_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf_generate_messages_lisp[0m
+[ 14%] Built target dynamic_reconfigure_gencfg
+[ 14%] Built target std_srvs_generate_messages_lisp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[ 14%] Built target tf_generate_messages_lisp
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[ 14%] Built target rosgraph_msgs_generate_messages_py
+[ 14%] Built target dynamic_reconfigure_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_py[0m
+[ 14%] Built target roscpp_generate_messages_nodejs
+[ 14%] Built target roscpp_generate_messages_cpp
+[ 14%] Built target geometry_msgs_generate_messages_cpp
+[ 14%] Built target tf_generate_messages_nodejs
+[ 14%] Built target dynamic_reconfigure_generate_messages_nodejs
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[ 14%] Built target tf2_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[ 14%] Built target geometry_msgs_generate_messages_py
+[ 14%] Built target dynamic_reconfigure_generate_messages_eus
+[ 14%] Built target tf2_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[ 14%] Built target geometry_msgs_generate_messages_nodejs
+[ 14%] Built target sensor_msgs_generate_messages_py
+[ 14%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_eus[0m
+[35m[1mScanning dependencies of target ohm_sensors_msgs_generate_messages_cpp[0m
+[ 14%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[ 14%] Built target rosgraph_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_nodejs[0m
+[ 14%] Built target actionlib_generate_messages_eus
+[ 14%] Built target sensor_msgs_generate_messages_nodejs
+[ 14%] Built target ohm_sensors_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf_generate_messages_py[0m
+[ 14%] Built target actionlib_generate_messages_nodejs
+[ 14%] Built target actionlib_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_lisp[0m
+[ 14%] Built target tf_generate_messages_py
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_nodejs[0m
+[ 14%] Built target std_msgs_generate_messages_eus
+[ 14%] Built target actionlib_generate_messages_py
+[ 14%] Built target actionlib_msgs_generate_messages_nodejs
+[ 14%] Built target actionlib_msgs_generate_messages_lisp
+[ 14%] Built target tf2_msgs_generate_messages_lisp
+[ 14%] Built target tf2_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target transformation_node[0m
+[35m[1mScanning dependencies of target tilt_scanner_node[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/tilt_scanner_node.dir/src/tilt_scanner_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/tilt_scanner_node.dir/src/TiltScannerNode.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/transformation_node.dir/src/TransformationNode.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/transformation_node.dir/src/transformation_node.cpp.o[0m
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_tilt_scanner_3d/src/TiltScannerNode.cpp:8[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_tilt_scanner_3d/src/TiltScannerNode.h:17:10:[m[K [01;31m[Kfatal error: [m[Klibserial/SerialStream.h: No such file or directory
+   17 | #include [01;31m[K<libserial/SerialStream.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tilt_scanner_node.dir/build.make:76: CMakeFiles/tilt_scanner_node.dir/src/TiltScannerNode.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_tilt_scanner_3d/src/tilt_scanner_node.cpp:10[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_tilt_scanner_3d/src/TiltScannerNode.h:17:10:[m[K [01;31m[Kfatal error: [m[Klibserial/SerialStream.h: No such file or directory
+   17 | #include [01;31m[K<libserial/SerialStream.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tilt_scanner_node.dir/build.make:63: CMakeFiles/tilt_scanner_node.dir/src/tilt_scanner_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:678: CMakeFiles/tilt_scanner_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 85%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_tilt_scanner_3d/lib/ohm_tilt_scanner_3d/transformation_node[0m
+[ 85%] Built target transformation_node
+make: *** [Makefile:141: all] Error 2

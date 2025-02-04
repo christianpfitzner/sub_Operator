@@ -1,0 +1,2 @@
+ohm_sensors/ohm_sensors
+/home/user/workspace/ros/devel/.private/ohm_sensors/cmake.lock /home/user/workspace/ros/devel/./cmake.lock

@@ -1,0 +1,73 @@
+[35m[1mScanning dependencies of target _ohm_sensors_gripper2_generate_messages_check_deps_from_light_control[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target _ohm_sensors_gripper2_generate_messages_check_deps_error_detection[0m
+[35m[1mScanning dependencies of target _ohm_sensors_gripper2_generate_messages_check_deps_to_light_control[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_gencfg[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target _ohm_sensors_gripper2_generate_messages_check_deps_hall[0m
+[35m[1mScanning dependencies of target _ohm_sensors_gripper2_generate_messages_check_deps_tof_sensor[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  3%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/include/ohm_sensors_gripper2/sensorConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/lib/python3/dist-packages/ohm_sensors_gripper2/cfg/sensorConfig.py[0m
+[  3%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  3%] Built target sensor_msgs_generate_messages_py
+[  3%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_from_light_control
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_tof_sensor
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_to_light_control
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_error_detection
+[  3%] Built target sensor_msgs_generate_messages_nodejs
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_hall
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages_eus[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages_py[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages_nodejs[0m
+[ 15%] [34m[1mGenerating Lisp code from ohm_sensors_gripper2/hall.msg[0m
+[ 15%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper2/tof_sensor.msg[0m
+[ 15%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper2/hall.msg[0m
+[ 15%] [34m[1mGenerating Lisp code from ohm_sensors_gripper2/tof_sensor.msg[0m
+[ 21%] [34m[1mGenerating Javascript code from ohm_sensors_gripper2/hall.msg[0m
+[ 21%] [34m[1mGenerating Python from MSG ohm_sensors_gripper2/hall[0m
+[ 24%] [34m[1mGenerating C++ code from ohm_sensors_gripper2/hall.msg[0m
+Generating reconfiguration files for Sensor in ohm_sensors_gripper2
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/include/ohm_sensors_gripper2/SensorConfig.h
+[ 27%] [34m[1mGenerating Lisp code from ohm_sensors_gripper2/from_light_control.msg[0m
+[ 30%] [34m[1mGenerating Javascript code from ohm_sensors_gripper2/tof_sensor.msg[0m
+[ 33%] [34m[1mGenerating Javascript code from ohm_sensors_gripper2/from_light_control.msg[0m
+[ 33%] Built target ohm_sensors_gripper2_gencfg
+[ 36%] [34m[1mGenerating Python from MSG ohm_sensors_gripper2/tof_sensor[0m
+[ 39%] [34m[1mGenerating Javascript code from ohm_sensors_gripper2/to_light_control.msg[0m
+[ 42%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper2/from_light_control.msg[0m
+[ 45%] [34m[1mGenerating Lisp code from ohm_sensors_gripper2/to_light_control.msg[0m
+[ 48%] [34m[1mGenerating Javascript code from ohm_sensors_gripper2/error_detection.msg[0m
+[ 51%] [34m[1mGenerating Lisp code from ohm_sensors_gripper2/error_detection.msg[0m
+[ 57%] [34m[1mGenerating Python from MSG ohm_sensors_gripper2/from_light_control[0m
+[ 57%] [34m[1mGenerating C++ code from ohm_sensors_gripper2/tof_sensor.msg[0m
+[ 60%] [34m[1mGenerating C++ code from ohm_sensors_gripper2/from_light_control.msg[0m
+[ 60%] Built target ohm_sensors_gripper2_generate_messages_nodejs
+[ 60%] Built target ohm_sensors_gripper2_generate_messages_lisp
+[ 63%] [34m[1mGenerating C++ code from ohm_sensors_gripper2/to_light_control.msg[0m
+[ 66%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper2/to_light_control.msg[0m
+[ 69%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper2/error_detection.msg[0m
+[ 72%] [34m[1mGenerating Python from MSG ohm_sensors_gripper2/to_light_control[0m
+[ 75%] [34m[1mGenerating EusLisp manifest code for ohm_sensors_gripper2[0m
+[ 78%] [34m[1mGenerating Python from MSG ohm_sensors_gripper2/error_detection[0m
+[ 81%] [34m[1mGenerating C++ code from ohm_sensors_gripper2/error_detection.msg[0m
+[ 81%] Built target ohm_sensors_gripper2_generate_messages_cpp
+[35m[1mScanning dependencies of target light_control_node[0m
+[35m[1mScanning dependencies of target serial_node[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/light_control_node.dir/src/sensor_gripper_light_control_node.cpp.o[0m
+[ 87%] [34m[1mGenerating Python msg __init__.py for ohm_sensors_gripper2[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/SerialPort.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/SensorGripperNode.cpp.o[0m
+[ 93%] Built target ohm_sensors_gripper2_generate_messages_py
+[ 93%] Built target ohm_sensors_gripper2_generate_messages_eus
+[35m[1mScanning dependencies of target ohm_sensors_gripper2_generate_messages[0m
+[ 93%] Built target ohm_sensors_gripper2_generate_messages
+[ 96%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/lib/ohm_sensors_gripper2/light_control_node[0m
+[ 96%] Built target light_control_node
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/lib/ohm_sensors_gripper2/serial_node[0m
+[100%] Built target serial_node

@@ -1,0 +1,69 @@
+<launch>
+      
+
+  <!--Fahrerkamera-->
+  <node pkg="ohm_uvc" type="uvc_node" name="cam_driver">
+    <param name="device"          value="/dev/cam-driver"     type="string"      /> <!-- device name                                         -->
+    <param name="image_topic"     value="image/driver"        type="string"      /> <!-- topic for image to be published                     -->
+    
+    <!-- normal  -->
+    <param name="width"           value="640"                 type="int"         /> <!-- width of image in normal mode. also for starting    -->
+    <param name="height"          value="480"                 type="int"         /> <!-- height of image in normal mode. also for starting   -->
+    
+    <!-- parameters for reconfigure -->
+    <param name="framerate"       value="20"                  type="int"         /> <!-- frame rate of camera                                -->
+    <param name="pl_freq"         value="1"                   type="int"         /> <!-- frequency for power line compensation               -->
+    <param name="saturation"      value="128"                 type="int"         /> <!-- saturation in image                                 -->
+    <param name="contrast"        value="128"                 type="int"         /> <!-- constrast of camera                                 -->
+    <param name="sharpness"       value="0"                   type="int"         /> <!-- sharpness of image                                  -->
+  </node>  
+     
+  
+  <node pkg="ohm_uvc" type="uvc_node" name="cam_front">
+    <param name="device"          value="/dev/cam-front"      type="string"      /> <!-- device name                                         -->
+    <param name="image_topic"     value="image/front"         type="string"      /> <!-- topic for image to be published                     -->
+    
+    <!-- normal  -->
+    <param name="width"           value="1600"                type="int"         /> <!-- width of image in normal mode. also for starting    -->
+    <param name="height"          value="896"                 type="int"         /> <!-- height of image in normal mode. also for starting   -->
+    
+    <!-- parameters for reconfigure -->
+    <param name="framerate"       value="5"                   type="int"         /> <!-- frame rate of camera                                -->
+    <param name="pl_freq"         value="1"                   type="int"         /> <!-- frequency for power line compensation               -->
+    <param name="saturation"      value="128"                 type="int"         /> <!-- saturation in image                                 -->
+    <param name="contrast"        value="128"                 type="int"         /> <!-- constrast of camera                                 -->
+    <param name="sharpness"       value="0"                   type="int"         /> <!-- sharpness of image                                  -->
+  </node>  
+  
+  
+  <!--Laserscanner-->
+  <node name="sick_laser" pkg="sick_tim" type="sick_tim551_2050001">
+     <param name="frame_id" type="string" value="georg/laser"/>
+  </node>
+  
+
+  <!--Thermokamera-->
+  <node name="optris_imager_node" pkg="optris_drivers" type="optris_imager_node" output="screen">
+    <!-- Set configuration file of your camera here! -->
+    <param name="xmlConfig"      type="string" value="/home/user/workspace/ros/catkin_ws/src/optris_drivers/config/11060017.xml"/>  
+<!--    <remap from="thermal_image"  to="image/thermal"/> -->
+  </node>
+  
+  
+  <node name="optris_colorconvert_node" pkg="optris_drivers" type="optris_colorconvert_node">
+    <param name="palette"        type="int"    value="6"/>     <!-- see ImageBuilder.h for valid values -->
+    <param name="paletteScaling" type="int"    value="2"/>     <!-- scaling method for color conversion, see ImageBuilder.h -->
+    <param name="temperatureMin" type="double" value="20"/>    <!-- set minimum temperature for fixed scaling -->
+    <param name="temperatureMax" type="double" value="40"/>    <!-- set maximum temperature for fixed scaling -->
+    <param name="looprate"       type="double" value="30"/>    <!-- set frame rate to publish images -->
+    <!-- Uncomment the following line, if you want to use PNG compression. Use rosrun dynamic_reconfigure reconfigure_gui to pick PNG format --> 
+    <!-- <param name="image_transport" type="string" value="compressed"/> -->
+  </node>
+  
+
+  
+<!-- co 2 sensor -->
+   <node pkg="ohm_co2_compact" type="ohm_co2_compact_node" name="co2_device"/>
+
+
+</launch>

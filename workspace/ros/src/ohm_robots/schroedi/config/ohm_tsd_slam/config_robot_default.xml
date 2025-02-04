@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config_robot>
+  <local_offset x = "0.0" y = "0.0" yaw = "0.0"/>
+  <range_thresh max = "30.0" min = "0.001" low_reflectivity = "2.0"/> 
+  <footprint width = "1.0" height = "0.9" x_offset = "-0.325"/>
+  <covariance matched = "1e-17" error = "100.0"/>
+</config_robot>

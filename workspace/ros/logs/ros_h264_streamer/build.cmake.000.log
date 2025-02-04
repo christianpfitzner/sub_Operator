@@ -1,0 +1,55 @@
+Not searching for unused variables given on the command line.
+[36m--[0m The C compiler identification is GNU 9.4.0
+[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m Check for working C compiler: /usr/bin/cc
+[36m--[0m Check for working C compiler: /usr/bin/cc -- works
+[36m--[0m Detecting C compiler ABI info
+[36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Detecting C compile features
+[36m--[0m Detecting C compile features - done
+[36m--[0m Check for working CXX compiler: /usr/bin/c++
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ -- works
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/user/workspace/ros/devel/.private/ros_h264_streamer
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/user/workspace/ros/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/user/workspace/ros/devel;/opt/ros/noetic
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python3
+[36m--[0m Using Debian Python package layout
+[36m--[0m Found PY_em: /usr/lib/python3/dist-packages/em.py
+[36m--[0m Using empy: /usr/lib/python3/dist-packages/em.py
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/user/workspace/ros/build/ros_h264_streamer/test_results
+[36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found version "3.8.10")
+[36m--[0m Found Threads: TRUE
+[36m--[0m Using Python nosetests: /usr/bin/nosetests3
+[36m--[0m catkin 0.8.10
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: program_options
+[33m[1mCMake Warning[0m at /home/user/workspace/ros/src/ros_h264_streamer/CMakeLists.txt:28 (find_package):
+  By not providing "Finddynamic_graph_bridge_msgs.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "dynamic_graph_bridge_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "dynamic_graph_bridge_msgs" with any of the following names:
+
+    dynamic_graph_bridge_msgsConfig.cmake
+    dynamic_graph_bridge_msgs-config.cmake
+
+  Add the installation prefix of "dynamic_graph_bridge_msgs" to
+  CMAKE_PREFIX_PATH or set "dynamic_graph_bridge_msgs_DIR" to a directory
+  containing one of the above files.  If "dynamic_graph_bridge_msgs" provides
+  a separate development package or SDK, be sure it has been installed.
+
+
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /home/user/workspace/ros/build/ros_h264_streamer

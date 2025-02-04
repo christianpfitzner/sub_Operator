@@ -1,0 +1,9 @@
+In file included from [01m[K/home/user/workspace/ros/src/ohm_perception/ohm_qr_detection/src/ohm_qr_detection_node.cpp:9[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_perception/ohm_qr_detection/src/QrCodeDetection.h:15:10:[m[K [01;31m[Kfatal error: [m[Kzbar.h: No such file or directory
+   15 | #include [01;31m[K<zbar.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/ohm_qr_detection_node.dir/build.make:63: CMakeFiles/ohm_qr_detection_node.dir/src/ohm_qr_detection_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:790: CMakeFiles/ohm_qr_detection_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

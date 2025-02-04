@@ -1,0 +1,20 @@
+<library path="lib/libtiltscan">
+  <class name="TiltScan" type="tiltscan::TiltScanPlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An example CPP GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Tilt Scan</label>
+      <icon type="theme">display-capplet</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

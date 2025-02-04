@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+ <include file="$(find schroedi)/launch/tf.launch"   /> 
+ <!-- <node pkg="ohm_move"    type="ohm_move_node"    name="ohm_move_node"     /> -->
+ <include file="$(find ohm_arm_interface)/launch/arm_interface.launch"/>
+  <node pkg="ohm_inverse" type="ohm_inverse_node" name="ohm_inverse_node"  />
+  <include file="$(find ohm_robotarm)/launch/hardware_interface.launch"    /> 
+<!--  <node pkg = "co2sensor" type = "co2sensor_node" name = "co2sensor_node" /> -->
+  <!-- Joint state publisher for urdf-->
+   <node name="joint_state_publisher_flipper" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam param="source_list">["joint_visual", "flipper_states"]</rosparam>
+   </node> 
+ <node pkg = "ohm_flipper_tf_publisher" type = "ohm_flipper_tf_publisher_node" name = "flipper_tf_publisher"> 
+   </node> 
+</launch>

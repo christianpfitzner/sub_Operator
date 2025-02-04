@@ -1,0 +1,20 @@
+<library path="lib/libremote">
+  <class name="RemotePlugin" type="ohm_remote::RemotePlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Remote</label>
+      <icon type="theme">display-capplet</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

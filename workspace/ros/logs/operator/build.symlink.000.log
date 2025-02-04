@@ -1,0 +1,3 @@
+Symlinking /home/user/workspace/ros/devel/share/operator/cmake/operatorConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/operator/cmake/operatorConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/operator.pc

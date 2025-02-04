@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>warning_robot.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,29 @@
+[  2%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor_gripper.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/sensor_gripperConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/python3/dist-packages/ohm_sensors_gripper/cfg/sensor_gripperConfig.py[0m
+Generating reconfiguration files for SensorGripper in ohm_sensors_gripper
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/SensorGripperConfig.h
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_error_detection
+[  2%] Built target ohm_sensors_gripper_gencfg
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_single_obj
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_objects
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_sensors
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_from_light_control
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_to_light_control
+[  4%] [32mBuilding CXX object CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_serial.cpp.o[0m
+[  4%] Built target sensor_msgs_generate_messages_py
+[  4%] Built target sensor_msgs_generate_messages_nodejs
+[  4%] Built target sensor_msgs_generate_messages_eus
+[  4%] Built target sensor_msgs_generate_messages_lisp
+[ 19%] Built target ohm_sensors_gripper_generate_messages_cpp
+[ 36%] Built target ohm_sensors_gripper_generate_messages_py
+[ 51%] Built target ohm_sensors_gripper_generate_messages_nodejs
+[ 68%] Built target ohm_sensors_gripper_generate_messages_eus
+[ 82%] Built target ohm_sensors_gripper_generate_messages_lisp
+[ 87%] Built target light_control_node
+[35m[1mScanning dependencies of target serial_node[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/sensor_gripper_serial_node.cpp.o[0m
+[ 90%] Built target ohm_sensors_gripper_generate_messages
+[ 92%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/ohm_sensors_gripper/tof_calibration_node[0m
+[ 95%] Built target tof_calibration_node
+[ 97%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/ohm_sensors_gripper/serial_node[0m
+[100%] Built target serial_node

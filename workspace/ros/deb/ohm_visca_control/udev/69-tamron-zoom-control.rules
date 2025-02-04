@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty",SUBSYSTEMS=="usb", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="01fc", MODE="0666", SYMLINK+="tamron-zoom-control"

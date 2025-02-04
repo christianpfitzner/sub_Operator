@@ -1,0 +1,26 @@
+In file included from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:14:10:[m[K [01;31m[Kerror: [m[Kempty filename in #include
+   14 | #include [01;31m[K""[m[K
+      |          [01;31m[K^~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:14:10:[m[K [01;31m[Kerror: [m[Kempty filename in #include
+   14 | #include [01;31m[K""[m[K
+      |          [01;31m[K^~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/phros_remote/src/MapperController.cpp:12[m[K:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:14:10:[m[K [01;31m[Kerror: [m[Kempty filename in #include
+   14 | #include [01;31m[K""[m[K
+      |          [01;31m[K^~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/phros_remote/src/MapperController.cpp:12[m[K:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:14:10:[m[K [01;31m[Kerror: [m[Kempty filename in #include
+   14 | #include [01;31m[K""[m[K
+      |          [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:272: CMakeFiles/phros_remote.dir/src/MapperController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:311: CMakeFiles/phros_remote.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:354: CMakeFiles/menu_test.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:315: CMakeFiles/menu_test.dir/src/MapperController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

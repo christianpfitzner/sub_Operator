@@ -1,0 +1,10 @@
+Header header
+uint16 id
+string type
+float32 angle
+float32 speed
+float32 load
+float32 voltage
+float32 current
+float32 temperature
+uint16 position

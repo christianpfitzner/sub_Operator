@@ -1,0 +1,2 @@
+#
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="13IP0680", SYMLINK+="escon_controller"

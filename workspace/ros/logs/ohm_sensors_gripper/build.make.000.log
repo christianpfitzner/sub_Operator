@@ -1,0 +1,37 @@
+[35m[1mScanning dependencies of target ohm_sensors_gripper_gencfg[0m
+[  2%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor_gripper.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/sensor_gripperConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/python3/dist-packages/ohm_sensors_gripper/cfg/sensor_gripperConfig.py[0m
+Generating reconfiguration files for SensorGripper in ohm_sensors_gripper
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/SensorGripperConfig.h
+[  2%] Built target ohm_sensors_gripper_gencfg
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_error_detection[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_error_detection
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_tof_single_obj[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_single_obj
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_tof_objects[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_objects
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_tof_sensors[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_sensors
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_from_light_control[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_from_light_control
+[35m[1mScanning dependencies of target _ohm_sensors_gripper_generate_messages_check_deps_to_light_control[0m
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_to_light_control
+[35m[1mScanning dependencies of target tof_calibration_node[0m
+[  4%] [32mBuilding CXX object CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_serial.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_tof_calibration_node.cpp.o[0m
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_serial.cpp:13[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_serial.h:33:10:[m[K [01;31m[Kfatal error: [m[Kohm_sensors_gripper/tof_single_obj.h: No such file or directory
+   33 | #include [01;31m[K<ohm_sensors_gripper/tof_single_obj.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tof_calibration_node.dir/build.make:63: CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_serial.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_tof_calibration_node.cpp:21[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_serial.h:33:10:[m[K [01;31m[Kfatal error: [m[Kohm_sensors_gripper/tof_single_obj.h: No such file or directory
+   33 | #include [01;31m[K<ohm_sensors_gripper/tof_single_obj.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tof_calibration_node.dir/build.make:76: CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_tof_calibration_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:688: CMakeFiles/tof_calibration_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ohm_robotarm
+    relative_path: data/ohm_robotarm.urdf
+  SRDF:
+    relative_path: config/ohm_robotarm.srdf
+  CONFIG:
+    generated_timestamp: 1456213771

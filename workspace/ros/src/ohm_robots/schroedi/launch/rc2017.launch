@@ -1,0 +1,117 @@
+
+<launch>
+
+ <node pkg="ohm_motiondetection" type="ohm_motiondetection_node" name="motion_detection"/>
+
+ <node pkg="ohm_qr_detection" type="ohm_qr_detection_node"  name="qr_detection">
+	<param name="qr_topic"                	type="string" value="/qr/pose_left_cam"/>
+ </node>
+
+	<node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_to_world_left_camera_node" output="screen">
+		<param name="qr_topic"                  type="string"  value="/qr/pose_left_cam"/>
+		<param name="laser_topic"               type="string"  value="/scan"/>
+		<param name="tf_qr_frame"               type="string"  value="/tf_qr_left"/>
+		<param name="tf_laser_frame"            type="string"  value="/laser"/>
+		<param name="tf_cam_frame"         		type="string"  value="sensor_head/driver_cam"/>
+		<param name="tf_map_frame"              type="string"  value="map"/>
+		<param name="qr_intersection_frame"     type="string"  value="/qr/candidate"/>
+	</node>		
+	
+	<node pkg="ohm_qr_detection" type="ohm_qr_stack_node" name="ohm_qr_stack_node" output="screen">
+		<param name="qr_intersection_frame"        	type="string"  value="/qr/candidate"/>
+		<param name="qr_markers_topic"        		type="string"  value="/qr/markers"/>
+		<param name="qr_txt_adress"        			type="string"  value="/home/chris/qr_robocup.txt"/>
+	</node>	
+
+
+ <node pkg = "ohm_schroedi_mc" type = "schroedi_mc" name = "motorcontroller" output = "screen">
+		<param name = "topic_velocity" type = "string" value = "/vel/cmd"/>
+        <param name = "topic_rps"    type = "string" value = "cmd/rps" />
+        <param name = "loop_rate"    type = "double" value = "20.0" />
+        <param name = "time_out_lag" type = "double" value = "0.5" />
+        <rosparam file = "$(find ohm_schroedi_mc)/param/params.yaml" command = "load"/>		
+	</node>  
+
+<!--	 
+  <node pkg="uvc_camera" name="driver_cam" type="uvc_camera_node">
+       <param name="fps"    value="30"/>
+       <param name="width"  value="800"/>
+       <param name="height" value="600"/>
+  </node>
+  -->
+
+  <node name="usb_cam_driver" pkg="usb_cam" type="usb_cam_node">
+    <param name="video_device"    value="/dev/video0" />
+    <param name="image_width"     value="640" />
+    <param name="image_height"    value="480" />
+    <param name="pixel_format"    value="mjpeg" />
+    <param name="framerate"       value="30"/>s
+    <param name="camera_frame_id" value="driver_cam" />
+    <param name="io_method"       	value="mmap"/>
+    <remap from="/usb_cam_driver/image_raw" to="/image_raw"/> 
+  </node>
+
+
+
+  <node name="reconfigure" pkg="dynamic_reconfigure" type="dynparam"  args="set_from_parameters /image_raw/compressed">
+    <param name="format"       type="string" value="jpeg" />
+    <param name="jpg_quality"                value="50"/>
+  </node>
+
+
+ <node pkg="topic_tools" type="throttle" name="save_bandwith_for_image" args="messages /image_raw/compressed 1.0 /throttled/compressed"/>
+
+
+ 
+  <node pkg="rosserial_python" name="serial_node" type="serial_node.py">
+    <param name="port" value="/dev/passion_of_johannes"/>
+    <param name="baud" value="115200"/>
+  </node>
+  
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find sick_tim)/urdf/example.urdf.xacro'" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+  <node name="sick_tim571_2050101" pkg="sick_tim" type="sick_tim551_2050001" respawn="false" output="screen">
+    <!-- default values: -->
+    <!--
+      <param name="min_ang" type="double" value="-2.35619449019" />
+      <param name="max_ang" type="double" value="2.35619449019" />
+      <param name="intensity" type="bool" value="True" />
+      <param name="skip" type="int" value="0" />
+      <param name="frame_id" type="str" value="laser" />
+      <param name="time_offset" type="double" value="-0.001" />
+      <param name="publish_datagram" type="bool" value="False" />
+      <param name="subscribe_datagram" type="bool" value="false" />
+      <param name="device_number" type="int" value="0" />
+      <param name="range_min" type="double" value="0.05" />
+    -->
+    <param name="range_max" type="double" value="25.0" />
+
+    <!-- Older versions of the scanner firmware report an incorrect time_increment.
+         If you get a warning about time_increment, uncomment this. -->
+    <!-- <param name="time_increment" type="double" value="0.000061722" /> -->
+
+    <!-- Uncomment this to enable TCP instead of USB connection; 'hostname' is the host name or IP address of the laser scanner
+    In cases where a race condition exists and the computer boots up before the TIM is ready, increase 'timelimit.'
+         <param name="hostname" type="string" value="192.168.0.1" />
+         <param name="port" type="string" value="2112" />
+         <param name="timelimit" type="int" value="5" />
+    -->
+  </node>
+  
+     <arg  name="TFtime"     default="10"      />   
+        
+   <node pkg="tf" type="static_transform_publisher" name="link_laser"       args="-0.34 0 0 0 0 0         laser                     base_link                $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_base"          args="0 0 -0.21 0 0 0         base_link                 base_footprint           $(arg TFtime)"/>
+  
+   <node pkg="tf" type="static_transform_publisher" name="tf_leftTrack"     args="0  0.23 -0.20 0 0 0     base_link                 leftTrack                $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_rightTrack"    args="0 -0.23 -0.20 0 0 0     base_link                 rightTrack               $(arg TFtime)"/>
+                                                                                                          
+   <node pkg="tf" type="static_transform_publisher" name="tf_sh_base"       args="0 -0.16 0.18 0 0 0      base_link                 sensor_head/yaw/base     $(arg TFtime)"/>
+   <node pkg="tf" type="static_transform_publisher" name="tf_sh_pitch"      args="0 0 0.065 0 0 0         sensor_head/yaw/rotated   sensor_head/pitch/base   $(arg TFtime)"/>
+                                                                                                                                                             
+   <node pkg="tf" type="static_transform_publisher" name="tf_driver_cam"    args="0 0.03 0.06 0 0 0       sensor_head/yaw/rotated   sensor_head/driver_cam   $(arg TFtime)"/>
+   
+  
+
+</launch>

@@ -1,0 +1,3 @@
+firmware: send cyle time instead of timestamp as int (saves memory and traffic)
+firmware: turn sign of flipper rps (needs to be turned around in the flipper control after that)
+firmware: remove wrong rps due to SPI errors (257) remove the call afterwards in flipper control

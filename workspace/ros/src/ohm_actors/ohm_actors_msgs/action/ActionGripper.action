@@ -1,0 +1,13 @@
+#goal definition
+uint8 CLOSE=0
+uint8 OPEN=1
+uint8 cmd
+---
+#result definition
+uint8 SUCCESS=0
+uint8 FAILURE=1
+uint8 result
+---
+#feedback
+float32 angle_gripper_left
+float32 angle_gripper_right

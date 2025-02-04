@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>
+  <config baudrate="57600" port="/dev/dynamixel" rate="10"/>
+  <servo id="131" topic="sensor_head/yaw">
+    <min-pos>0</min-pos>
+    <max-pos>4090</max-pos>
+    <mid-pos>2048</mid-pos>
+    <torque>1.0</torque>
+    <speed>20.0</speed>
+  </servo>
+  <servo id="130" topic="sensor_head/pitch">
+    <min-pos>1024</min-pos>
+    <max-pos>3072</max-pos>
+    <mid-pos>2048</mid-pos>
+    <torque>1.0</torque>
+    <speed>20.0</speed>
+  </servo>
+</dynamixel-bus>

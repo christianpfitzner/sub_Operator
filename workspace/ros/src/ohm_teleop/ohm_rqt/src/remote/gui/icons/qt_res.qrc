@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="menu_icons">
+    <file>warning_robot.jpg</file>
+    <file>arm.png</file>
+    <file>dontenter.png</file>
+    <file>drive_rev.png</file>
+    <file>drive.png</file>
+    <file>flat.png</file>
+    <file>gripper.png</file>
+    <file>horns.png</file>
+    <file>ref.png</file>
+    <file>up4.png</file>
+    <file>warning_robot.jpg</file>
+    <file>youshallnotpass.png</file>
+    <file>ascent.png</file>
+    <file>cross.png</file>
+  </qresource>
+</RCC>

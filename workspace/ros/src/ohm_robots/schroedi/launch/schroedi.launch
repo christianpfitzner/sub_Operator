@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find ohm_power_unit)/launch/pu.launch"/>
+  <include file="$(find ohm_schroedi_mc)/launch/schroedi_mc.launch"/>
+<!--  <include file="$(find schroedi)/launch/sensor-head.launch"/> -->
+<!--  <include file="$(find schroedi)/launch/sensors.launch"/> -->
+<!--  <include file="$(find new_dyn)/launch/pos_ctrl.launch"/> -->
+<!--  <include file="$(find schroedi)/launch/arm.launch"/> -->
+</launch>

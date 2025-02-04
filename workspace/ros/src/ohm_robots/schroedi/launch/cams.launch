@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="uvc_camera" type="uvc_camera_node" name="uvc_cam_node_head">
+    <param name="device"          value="/dev/cam_driver" type="string"      /> 
+    <param name="fps"             value="30"              type="string"      />
+    <remap from="image_raw" to="image_head"/>
+  </node> 
+<!--
+  <node pkg="uvc_camera" type="uvc_camera_node" name="uvc_cam_node_man">
+    <param name="device"          value="/dev/video2"     type="string"      /> 
+    <param name="fps"             value="30"              type="string"      />
+    <remap from="image_raw" to="image_man"/>
+  </node> 
+-->  
+  <node pkg="topic_tools" type="mux" name="image_mux" args="image_raw/compressed image_head/compressed image_man/compressed"/>
+  
+  
+</launch>

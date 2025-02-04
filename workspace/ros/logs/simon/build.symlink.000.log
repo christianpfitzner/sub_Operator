@@ -1,0 +1,3 @@
+Symlinking /home/user/workspace/ros/devel/share/simon/cmake/simonConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/simon/cmake/simonConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/simon.pc

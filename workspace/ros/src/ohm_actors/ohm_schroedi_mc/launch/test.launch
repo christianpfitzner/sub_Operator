@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- motorcontroller -->
+		<node pkg = "ohm_schroedi_mc" type = "schroedi_mc" name = "motorcontroller" output = "screen">
+		<param name = "topic_velocity" type = "string" value = "cmd/vel"/>
+        <param name = "topic_rps"    type = "string" value = "cmd/rps" />
+        <param name = "loop_rate"    type = "double" value = "20.0" />
+        <param name = "time_out_lag" type = "double" value = "0.5" />
+        <rosparam file = "$(find ohm_schroedi_mc)/param/params.yaml" command = "load"/>		
+	</node>
+	<!-- ps3 joystick stuff -->
+	<node pkg="joy"	    type="joy_node"        name="joy_node">
+		<param name = "dev" type = "string" value = "/dev/input/js1"/>
+		<param name="autorepeat_rate" value="1"/>
+	</node>
+	<node pkg="ohm_joy"     type="ohm_joy_node"     name="ohm_joy_node" output="screen">
+		<param name="config_file"    value="$(find ohm_schroedi_mc)/param/joy.ini"/>
+		<remap from="vel_cmd" to="cmd/vel"/>	
+		<param name="simon_state" type="string" value="/simon/cortex/state"/>	
+	</node>	
+</launch>

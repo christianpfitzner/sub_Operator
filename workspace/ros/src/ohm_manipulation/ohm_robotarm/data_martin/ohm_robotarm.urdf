@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<robot name="ohm_robotarm">
+
+<link name="base_footprint" >
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+</link>
+
+
+<link name="grundplattform">
+	<visual>
+                <origin xyz="0 0 0" rpy="0 0 3.14159" />
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/10-grundplattform.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+			<box size="0.480 1.230 0.230"/>
+		</geometry>
+		<origin xyz="0 0.1094 0.1159" rpy="0 0 0"/>
+	</collision>	
+</link>
+
+<joint name="base_footprint_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+  <child link="grundplattform"/>
+  <parent link="base_footprint"/>
+</joint>
+
+<link name="schwenkplattform">
+	<visual>
+		<origin xyz="0 0 0" rpy="0 0 3.14159" />
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/20-schwenkplattform.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<origin xyz="0.0715 0.0 0.0092" rpy="0 0 0" />
+		<geometry>
+			<box size="0.213 0.16 0.0318" />
+		</geometry>		
+	</collision>	
+	<limit effort="30.0" velocity="0.5"/>
+</link>
+<joint name="joint_1" type="continuous">
+	<parent link="grundplattform"/>
+	<child link="schwenkplattform"/>
+	<origin xyz="0 0 0.231" rpy="0 0 0"/>
+	<axis xyz="0 0 1" rpy="0 0 0"/>
+	<limit effort="65.0" velocity="0.5"/>
+</joint>
+
+<link name="cha_armelement">
+	<visual>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/30-cha17a-armelement.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+			<box size="0.075 0.08 0.462" />
+		</geometry>
+                <origin xyz="-0.0259 0 0.1989" rpy="0 0 0"/>
+	</collision>
+</link>
+<joint name="joint_2" type="revolute">
+	<parent link="schwenkplattform"/>
+	<child link="cha_armelement"/>
+	<origin xyz="0.05 -0.115 0.087942" rpy="-1.5707 0 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>x
+	<limit effort="65.0" velocity="0.5" lower="0" upper="3.1459"/>
+</joint>
+
+<link name="fha14_armelement">
+	<visual>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/40-fha14-armelement.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+			<box size="0.069 0.08 0.525" />
+		</geometry>
+                <origin xyz="-0.0312 0.00 0.23" rpy="0 0 0"/>
+	</collision>
+</link>
+<joint name="joint_3" type="revolute">
+	<parent link="cha_armelement"/>
+	<child link="fha14_armelement"/>
+	<origin xyz="-0.0498 0 0.385" rpy="3.141 0 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="35.0" velocity="0.5" lower="-6.2832" upper="0.0"/>
+</joint>
+
+<link name="fha11_armelement">
+	<visual>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-fha11-armelement.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+			<origin xyz="-0.0298 0.0 0.213" rpy="0 0 0" />
+		<geometry>
+			<box size="0.066 0.08 0.491" />
+		</geometry>
+	</collision>	
+</link>
+<joint name="joint_4" type="revolute">
+	<parent link="fha14_armelement"/>
+	<child link="fha11_armelement"/>
+	<origin xyz="-0.0573 0 0.4576" rpy="3.14159 0 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="0" upper="0"/>
+</joint>
+
+<link name="fha11_dynamixel_collision">
+	<collision>
+		<origin xyz="-0.0437 0.0 0.4576" rpy="0 0 0"/>
+		<geometry>
+			<box size="0.043 0.0356 0.06211" />
+		</geometry>
+	</collision>
+</link>
+
+<joint name="fha11_collision_connection" type="fixed">
+	<parent link="fha11_armelement"/>
+	<child link="fha11_dynamixel_collision"/>
+	<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+
+<link name="TCP_Dynamixel_01">
+	<visual>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-01.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+			<box size="0.044 0.044 0.065" />
+		</geometry>
+                <origin xyz="0 0 0.03" rpy="0 0 0"/>
+	</collision>		
+</link>
+<joint name="joint_5" type="revolute">
+	<parent link="fha11_armelement"/>
+	<child link="TCP_Dynamixel_01"/>
+	<origin xyz="-0.04225 0 0.4468" rpy="0 0 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="-1.90" upper="1.90"/>
+</joint>
+
+<link name="TCP_Dynamixel_02">
+	<visual>
+                <origin xyz="0.0 0 0.0" rpy="0 3.1416 -1.5708"/>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-02.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+	<collision>
+		<geometry>
+			<box size="0.0438 0.0356 0.0538" />
+		</geometry>
+                <origin xyz="-0.0017 0 0.015" rpy="0 0 0"/>
+	</collision>		
+</link>
+<joint name="joint_6" type="revolute">
+	<parent link="TCP_Dynamixel_01"/>
+	<child link="TCP_Dynamixel_02"/>
+	<origin xyz="0.0 0 0.06" rpy="0 0 1.5708"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="-1.90" upper="1.90"/>
+</joint>
+
+<link name="TCP_Dynamixel_03">
+	<visual>
+                <origin xyz="0.0 0 0.0" rpy="0 3.1416 -1.5708"/>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-03.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>	
+	<collision>
+		<geometry>
+			<box size="0.0746 0.1196 0.0548" />
+		</geometry>
+                <origin xyz="0.00942 0.0 0.0112" rpy="0 0 0"/>
+	</collision>		
+</link>
+<joint name="joint_7" type="revolute">
+	<parent link="TCP_Dynamixel_02"/>
+	<child link="TCP_Dynamixel_03"/>
+	<origin xyz="0.0 0.0 0.066895" rpy="0 -1.5708 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="-3.0" upper="3.0"/>
+</joint>
+
+<link name="TCP_Camera">
+	<visual>
+		<geometry>
+			<box size="0.001 0.001 0.001" />
+		</geometry>
+	</visual>		
+</link>
+
+<joint name="joint_cam" type="fixed">
+	<parent link="TCP_Dynamixel_03"/>
+	<child link="TCP_Camera"/>
+	<origin xyz="0.03 0.0 0.002" rpy="0 0 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+</joint>
+
+<link name="TCP_Gripper_01">
+	<visual>
+                <origin xyz="0.0 0 0.0" rpy="0 3.1416 0"/>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-04.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>
+        <collision>
+		<origin xyz="0.0 0 0.0" rpy="0 3.1416 0"/>
+                <geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-04_collision.dae" scale="1 1 1"/>
+		</geometry>
+        </collision>	
+</link>
+<joint name="joint_gripper_1" type="revolute">
+	<parent link="TCP_Dynamixel_03"/>
+	<child link="TCP_Gripper_01"/>
+	<origin xyz="0.020655 0.043313 0.00425" rpy="0 -1.5708 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="-0.4" upper="1.5708"/>
+</joint>
+
+<link name="TCP_Gripper_02">
+	<visual>
+                <origin xyz="0.0 0 0.0" rpy="0 3.1416 0"/>
+		<geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-04.dae" scale="1 1 1"/>
+		</geometry>
+	</visual>	
+	<collision>
+		<origin xyz="0.0 0 0.0" rpy="0 3.1416 0"/>
+                <geometry>
+			<mesh filename="package://ohm_robotarm/data/collada/50-TCP-04_collision.dae" scale="1 1 1"/>
+		</geometry>	
+	</collision>
+</link>
+<joint name="joint_gripper_2" type="revolute">
+	<parent link="TCP_Dynamixel_03"/>
+	<child link="TCP_Gripper_02"/>
+	<origin xyz="0.020655 -0.043313 0.00425" rpy="0 -1.5708 0"/>
+	<axis xyz="1 0 0" rpy="0 0 0"/>
+	<limit effort="15.0" velocity="0.5" lower="-1.5708" upper="0.4"/>
+</joint>
+
+</robot>

@@ -1,0 +1,7 @@
+<launch>
+	<include file="man_01.launch"/>
+
+	<!--3D Kamera Asus xtion-->	
+	<include file="general/asus.launch"/>
+		
+</launch>

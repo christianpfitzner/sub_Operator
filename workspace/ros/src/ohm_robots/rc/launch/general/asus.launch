@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="xtion" pkg="ohm_openni_device" type="device">
+    <param name="fps"      type="double" value="10.0"/>
+    <param name="frame_id" type="string" value="sensor_head"/>
+
+    <remap from="point_cloud" to="cloud/xtion"/>
+    <remap from="image"       to="image/xtion"/>
+  </node>
+</launch>

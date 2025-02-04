@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target phros_remote[0m
+[35m[1mScanning dependencies of target menu_test[0m
+[  1%] [32mBuilding CXX object CMakeFiles/phros_remote.dir/src/mappers/MapperDriveReverse.cpp.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/phros_remote.dir/src/mappers/MapperDrive.cpp.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/menu_test.dir/src/mappers/MapperDrive.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/menu_test.dir/src/mappers/MapperDriveReverse.cpp.o[0m
+[  5%] [32m[1mLinking CXX shared library /home/user/workspace/ros/devel/.private/phros_remote/lib/libphros_remote.so[0m
+[  6%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/phros_remote/lib/phros_remote/menu_test[0m
+[ 50%] Built target phros_remote
+[100%] Built target menu_test

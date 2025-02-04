@@ -1,0 +1,12 @@
+<launch>
+ <node name="audio_play_on_operator" pkg="audio_play" type="audio_play">
+      <remap from="audio"  to="audio/fromRobot"/>
+   </node>
+
+   <node name="audio_capture_from_operator" pkg="audio_capture" type="audio_capture">
+      <remap from="audio"  to="audio/fromOperator"/>
+   </node>
+  
+
+
+</launch>

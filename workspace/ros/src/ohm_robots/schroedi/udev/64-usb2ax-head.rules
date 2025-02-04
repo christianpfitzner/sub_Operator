@@ -1,0 +1,2 @@
+KERNEL=="ttyACM[0-9]*", SUBSYSTEM=="tty", ATTRS{idProduct}=="06a7",  ATTRS{idVendor}=="16d0", ATTRS{serial}=="7403130343735101D0A1", SYMLINK+="head_dxl"  
+#, ATTRS{product}=="USB2AX", SUBSYSTEMS=="usb",

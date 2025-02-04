@@ -1,0 +1,11 @@
+[01m[K/home/user/workspace/ros/src/ohm_actors/ohm_inspector/src/opencm_interface.cpp:[m[K In member function ‘[01m[Kbool OpenCMInterface::sendConnectMessage(const uint16_t&, unsigned int&)[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_actors/ohm_inspector/src/opencm_interface.cpp:268:36:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(((int)timeoutMS) >> 8)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’} [[01;35m[K-Wnarrowing[m[K]
+  268 |     uint8_t data[2] =   {[01;35m[K(timeoutMS>>8)[m[K, (timeoutMS)};
+      |                          [01;35m[K~~~~~~~~~~^~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_actors/ohm_inspector/src/opencm_interface.cpp:268:43:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(uint16_t)timeoutMS[m[K’ from ‘[01m[Kuint16_t[m[K’ {aka ‘[01m[Kshort unsigned int[m[K’} to ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’} [[01;35m[K-Wnarrowing[m[K]
+  268 |     uint8_t data[2] =   {(timeoutMS>>8), [01;35m[K(timeoutMS)[m[K};
+      |                                          [01;35m[K~^~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_actors/ohm_inspector/src/opencm_interface.cpp:[m[K In member function ‘[01m[Kbool OpenCMInterface::sendDynamixelResetMessage()[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_actors/ohm_inspector/src/opencm_interface.cpp:221:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  221 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

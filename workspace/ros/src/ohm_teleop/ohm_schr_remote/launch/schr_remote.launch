@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>	
+	<!-- start joy stick driver-->
+	<node pkg="joy"	    type="joy_node"        name="joy_node">
+		<param name="autorepeat_rate" value="20.0"/>
+        <param name="dev" value="/dev/input/js1"/>
+	</node>
+	
+  <node pkg = "ohm_schr_remote" type = "schr_remote" name = "schr_remote" output = "screen">
+    <param name="topic_twist" type = "string" value = "/vel/cmd"/>
+  </node>
+	
+	</launch>

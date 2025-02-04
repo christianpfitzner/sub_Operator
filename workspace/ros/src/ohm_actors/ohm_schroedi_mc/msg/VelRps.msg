@@ -1,0 +1,7 @@
+int16 chainLeft
+int16 chainRight
+int16 flipperFrontLeft
+int16 flipperFrontRight
+int16 flipperRearLeft
+int16 flipperRearRight
+int16 command

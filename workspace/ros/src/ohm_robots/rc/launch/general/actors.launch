@@ -1,0 +1,30 @@
+<launch> 
+   <include file="$(find ohm_summit_bridge)/launch/drive.launch"/>   
+
+   <node name="dynamixel_server" pkg="ohm_dynamixel" type="dynamixel-server">
+    <param name="xml" type="string" value="/home/user/workspace/ros/ohm_robots/src/simon/config/dynamixel-bus.xml"/>
+   </node>
+
+  <node name="sensor_head" pkg="ohm_sensor_head" type="sensor-head">
+    <param name="topic_target_direction" type="string" value="goal/sensor_head"/>
+    <param name="tf_target"       type="string" value="simon/base_link"/>
+    <param name="tf_source"       type="string" value="map"/>
+    <param name="tf_yaw_source"   type="string" value="simon/sensor_head/yaw/base"/>
+    <param name="tf_yaw_target"   type="string" value="simon/sensor_head/yaw/rotated"/>
+    <param name="tf_pitch_source" type="string" value="simon/sensor_head/pitch/base"/>
+    <param name="tf_pitch_target" type="string" value="simon/sensor_head/pitch/rotated"/>
+  </node>
+  
+  <node pkg="tf" type="static_transform_publisher" name="ohm_inspector_mount_point_broadcaster" args="-0.1 -0.05 0 0 0 0 simon/base_link simon/inspector/base 100" />
+  <node name="inspector_node" pkg="ohm_inspector" type="inspector_node">
+     <param name="topicName"         value="inspector_cmd"               type="string"/>
+     <param name="serialPort"        value="/dev/opencm_inspector"       type="string"/>
+     <param name="timeoutMS"         value="250"                         type="int"/>
+     <param name="maxErrorCnt"       value="5"                           type="int"/>
+     <param name="updateFrequencyHz" value="25.0"                        type="double"/>	
+     <param name="speed2DScale"      value="200.0"                       type="double"/>
+     <param name="speedAxisScale"    value="4.0"                         type="double"/>
+   </node>
+
+   
+</launch>

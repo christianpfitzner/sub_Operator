@@ -1,0 +1,24 @@
+/home/user/workspace/ros/src/phros_remote/src/gui/DialogWarningArmReset.h:21: Note: No relevant classes found. No output generated.
+/home/user/workspace/ros/src/phros_remote/src/ThreadRos.h:26: Note: No relevant classes found. No output generated.
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDriveReverse::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  118 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  130 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:324: CMakeFiles/phros_remote.dir/src/mappers/MapperDriveReverse.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDriveReverse::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  118 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  130 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:367: CMakeFiles/menu_test.dir/src/mappers/MapperDriveReverse.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,31 @@
+
+<launch>
+
+<node name="dynamixel_server" pkg="ohm_dynamixel" type="dynamixel-server" output="screen">
+    <param name="xml" type="string" value="/home/user/workspace/catkin_ws/src/ohm_robots/schroedi/config/dynamixel-bus.xml"/>
+    <!--param name="xml" type="string" value="/home/user/workspace/catkin_ws/src/ohm_robots/georg/config/dynamixel-bus.xml"/-->
+  </node>
+
+  <node name="sensor_head" pkg="ohm_sensor_head" type="sensor-head" output="screen">
+    <param name="topic_target_direction" type="string" value="goal/sensor_head"               />
+    <param name="topic_target_point"     type="string" value="goal/look_at_victim"            />
+    <param name="tf_target"              type="string" value="base_footprint"                     />
+    <param name="tf_source"              type="string" value="map"                            />
+    <param name="tf_yaw_source"          type="string" value="sensor_head/yaw/base"     />
+    <param name="tf_yaw_target"          type="string" value="sensor_head/yaw/rotated"  />
+    <param name="tf_pitch_source"        type="string" value="sensor_head/pitch/base"   />
+    <param name="tf_pitch_target"        type="string" value="sensor_head/pitch/rotated"/>
+    <param name="tf_sensor"              type="string" value="sensor_head/yaw/base"     />
+    <param name="service_mode"           type="string" value="sensor_head/mode"               />
+  </node>
+
+  <!--node pkg="tf" type="static_transform_publisher" name="link_sensor_head_base_yaw"
+	args="0.04 0 0.17 0 0 0 georg/base georg/sensor_head/yaw/base 50" />
+  <node pkg="tf" type="static_transform_publisher" name="link_sensor_head_yaw_pitch"
+	args="0 0 0.06 0 0 0 georg/sensor_head/yaw/rotated georg/sensor_head/pitch/base 50" />
+  <node pkg="tf" type="static_transform_publisher" name="link_sensor_head_pitch_xtion"
+	args="0 0 0.04 0 0.14 0 georg/sensor_head/pitch/rotated georg/sensor_head/xtion 50"/-->
+
+
+
+</launch>

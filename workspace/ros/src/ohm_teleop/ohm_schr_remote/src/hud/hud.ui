@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HUD</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="WidgetHud" name="widget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDrives">
+    <property name="title">
+     <string>Drives</string>
+    </property>
+    <addaction name="actionReference_Mode"/>
+    <addaction name="actionReset_Drives"/>
+   </widget>
+   <widget class="QMenu" name="menuGripper">
+    <property name="title">
+     <string>Gripper</string>
+    </property>
+    <addaction name="actionSpread"/>
+   </widget>
+   <addaction name="menuDrives"/>
+   <addaction name="menuGripper"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReference_Mode">
+   <property name="text">
+    <string>Reference Mode</string>
+   </property>
+  </action>
+  <action name="actionSpread">
+   <property name="text">
+    <string>Spread</string>
+   </property>
+  </action>
+  <action name="actionReset_Drives">
+   <property name="text">
+    <string>Reset Drives</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WidgetHud</class>
+   <extends>QWidget</extends>
+   <header>WidgetHud.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

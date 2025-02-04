@@ -1,0 +1,114 @@
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDrive::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::ServiceClient::call()[m[K’
+  142 |     _flipper_preset_service.call([01;31m[K)[m[K
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:56:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> bool ros::ServiceClient::call(MReq&, MRes&)[m[K’
+   56 |   bool [01;36m[Kcall[m[K(MReq& req, MRes& res)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:56:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:82:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Service> bool ros::ServiceClient::call(Service&)[m[K’
+   82 |   bool [01;36m[Kcall[m[K(Service& service)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:82:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:98:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> bool ros::ServiceClient::call(const MReq&, MRes&, const string&)[m[K’
+   98 |   bool [01;36m[Kcall[m[K(const MReq& req, MRes& resp, const std::string& service_md5sum)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:98:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:122:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool ros::ServiceClient::call(const ros::SerializedMessage&, ros::SerializedMessage&, const string&)[m[K’
+  122 |   bool [01;36m[Kcall[m[K(const SerializedMessage& req, SerializedMessage& resp, const std::string& service_md5sum);
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:122:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDrive::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::ServiceClient::call()[m[K’
+  142 |     _flipper_preset_service.call([01;31m[K)[m[K
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:56:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> bool ros::ServiceClient::call(MReq&, MRes&)[m[K’
+   56 |   bool [01;36m[Kcall[m[K(MReq& req, MRes& res)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:56:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:82:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Service> bool ros::ServiceClient::call(Service&)[m[K’
+   82 |   bool [01;36m[Kcall[m[K(Service& service)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:82:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:98:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> bool ros::ServiceClient::call(const MReq&, MRes&, const string&)[m[K’
+   98 |   bool [01;36m[Kcall[m[K(const MReq& req, MRes& resp, const std::string& service_md5sum)
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:98:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:142:34:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+  142 |     _flipper_preset_service.call([01;36m[K)[m[K
+      |                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/IMapper.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperBase.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.h:11[m[K,
+                 from [01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/service_client.h:122:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool ros::ServiceClient::call(const ros::SerializedMessage&, ros::SerializedMessage&, const string&)[m[K’
+  122 |   bool [01;36m[Kcall[m[K(const SerializedMessage& req, SerializedMessage& resp, const std::string& service_md5sum);
+      |        [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/service_client.h:122:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:311: CMakeFiles/phros_remote.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:354: CMakeFiles/menu_test.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

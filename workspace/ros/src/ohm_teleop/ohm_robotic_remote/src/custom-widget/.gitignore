@@ -1,0 +1,4 @@
+moc_*.o
+*.o
+test
+qrc_*.cpp

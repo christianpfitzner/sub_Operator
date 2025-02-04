@@ -1,0 +1,21 @@
+[  6%] [32mBuilding CXX object CMakeFiles/ros_h264_streamer.dir/src/h264_encoder.cpp.o[0m
+[ 13%] [32m[1mLinking CXX shared library /home/user/workspace/ros/devel/.private/ros_h264_streamer/lib/libros_h264_streamer.so[0m
+[ 33%] Built target ros_h264_streamer
+[35m[1mScanning dependencies of target testEncoderDecoder[0m
+[35m[1mScanning dependencies of target testReceiver[0m
+[35m[1mScanning dependencies of target testStreamer[0m
+[35m[1mScanning dependencies of target mkv_recorder[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/testStreamer.dir/test/testStreamer.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/mkv_recorder.dir/src/utils/output/matroska_ebml.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/testReceiver.dir/test/testReceiver.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mkv_recorder.dir/src/utils/mkv_recorder.cpp.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/mkv_recorder.dir/src/utils/output/matroska.c.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/testEncoderDecoder.dir/test/testEncoderDecoder.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ros_h264_streamer/lib/ros_h264_streamer/testEncoderDecoder[0m
+[ 80%] Built target testEncoderDecoder
+[ 86%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ros_h264_streamer/lib/ros_h264_streamer/mkv_recorder[0m
+[ 93%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ros_h264_streamer/lib/ros_h264_streamer/testReceiver[0m
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ros_h264_streamer/lib/ros_h264_streamer/testStreamer[0m
+[100%] Built target mkv_recorder
+[100%] Built target testReceiver
+[100%] Built target testStreamer

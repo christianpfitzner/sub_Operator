@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+ <node pkg = "ohm_sensor_head" type = "head_follow" name = "head_follow"/>
+	<node pkg="ohm_dynamixel" name = "dynamixel_server_sensor_head" type="dynamixel_server" output = "screen">
+		<param name = "config_file" type = "string" value = "$(find ohm_sensor_head)/config/simon_head.xml"/>			
+	</node>
+</launch> 

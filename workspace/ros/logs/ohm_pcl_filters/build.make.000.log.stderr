@@ -1,0 +1,7 @@
+[01m[K/home/user/workspace/ros/src/ohm_perception/ohm_pcl_filters/src/static_tf_recon.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kohm_pcl_filters/ReconfigureBaseTfConfig.h: No such file or directory
+   11 | #include [01;31m[K"ohm_pcl_filters/ReconfigureBaseTfConfig.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/static_tf_recon.dir/build.make:63: CMakeFiles/static_tf_recon.dir/src/static_tf_recon.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:236: CMakeFiles/static_tf_recon.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

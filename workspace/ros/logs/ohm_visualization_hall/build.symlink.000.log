@@ -1,0 +1,4 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_visualization_hall/cmake/ohm_visualization_hallConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_visualization_hall/cmake/ohm_visualization_hallConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/ohm_visualization_hall/hall_visualization_node
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_visualization_hall.pc

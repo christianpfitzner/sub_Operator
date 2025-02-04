@@ -1,0 +1,7 @@
+<launch>
+
+ <node pkg = "ohm_epos_skid_drive" type = "epos_skid_steer_node" name = "epos_skid_steer_node">
+	<param name="device_motor"   type="string"   value="/dev/ttyUSB44"/>
+  </node>
+</launch>
+

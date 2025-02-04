@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg = "ohm_arm_interface" type = "arm_interface" name = "arm_interface" output = "screen">
+		<rosparam command="load" file="$(find ohm_arm_interface)/config/pre_defined_pos.yaml" />
+		<param name = "space_constraints" type = "double" value = "1.20"/>
+	</node>
+
+</launch>

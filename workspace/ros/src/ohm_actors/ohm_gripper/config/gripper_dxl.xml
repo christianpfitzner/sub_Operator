@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>
+  <config baudrate="500000" port="/dev/ttyACM0" protocol_version="1.0" scan_range="6"/>
+  <servo id="1" name="joint5" speed="200"   acceleration="50" pubPos="1" pubVel="0" pubCurrent="0"/>
+  <servo id="2" name="joint6" speed="200"   acceleration="50" pubPos="1" pubVel="0" pubCurrent="0"/>
+  <servo id="3" name="joint7" speed="200"   acceleration="50" pubPos="1" pubVel="0" pubCurrent="0"/>
+  <servo id="4" name="gripper1" speed="200" acceleration="50" pubPos="1" pubVel="0" pubCurrent="0"/>
+  <servo id="5" name="gripper2" speed="200" acceleration="50" pubPos="1" pubVel="0" pubCurrent="0"/>
+</dynamixel-bus>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>ohm_manipulation</name>
+  <version>0.0.0</version>
+  <description>The ohm_manipulation package</description>
+
+
+  <maintainer email="zieglerjo@todo.todo">mkuehn</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>ohm_can_interface</run_depend>
+  <run_depend>ohm_inverse</run_depend>
+  <run_depend>ohm_arm_interface</run_depend>
+  <run_depend>ohm_robotarm</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

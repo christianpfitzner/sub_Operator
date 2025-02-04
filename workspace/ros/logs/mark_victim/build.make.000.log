@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target mark[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mark.dir/src/mark_victim.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/mark_victim/lib/mark_victim/mark[0m
+[100%] Built target mark

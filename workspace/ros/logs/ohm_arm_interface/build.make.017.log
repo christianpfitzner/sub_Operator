@@ -1,0 +1,70 @@
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target _ohm_arm_interface_generate_messages_check_deps_RobotarmCtrl[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target joy_to_arm[0m
+[35m[1mScanning dependencies of target arm_interface[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  5%] [32mBuilding CXX object CMakeFiles/joy_to_arm.dir/src/joy_to_arm.cpp.o[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/Aktuelle_Position/Aktuelle_Position.cpp.o[0m
+[ 11%] Built target std_msgs_generate_messages_lisp
+[ 11%] Built target sensor_msgs_generate_messages_cpp
+[ 11%] Built target geometry_msgs_generate_messages_cpp
+[ 11%] Built target std_msgs_generate_messages_cpp
+[ 11%] Built target sensor_msgs_generate_messages_eus
+[ 16%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/Aktuelle_Position/rtGetInf.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/Aktuelle_Position/rtGetNaN.cpp.o[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[ 22%] Built target _ohm_arm_interface_generate_messages_check_deps_RobotarmCtrl
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[ 22%] Built target geometry_msgs_generate_messages_eus
+[ 22%] Built target std_msgs_generate_messages_nodejs
+[ 22%] Built target std_msgs_generate_messages_eus
+[ 22%] Built target sensor_msgs_generate_messages_nodejs
+[ 27%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/Aktuelle_Position/rt_nonfinite.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/ArmInterFace.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/PredefinedArmPose.cpp.o[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages_py[0m
+[35m[1mScanning dependencies of target ohm_arm_interface_gencfg[0m
+[ 38%] Built target geometry_msgs_generate_messages_nodejs
+[ 44%] [34m[1mGenerating Python from MSG ohm_arm_interface/RobotarmCtrl[0m
+[ 50%] [34m[1mGenerating dynamic reconfigure files from cfg/Reconfigure.cfg: /home/user/workspace/ros/devel/.private/ohm_arm_interface/include/ohm_arm_interface/ReconfigureConfig.h /home/user/workspace/ros/devel/.private/ohm_arm_interface/lib/python3/dist-packages/ohm_arm_interface/cfg/ReconfigureConfig.py[0m
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages_lisp[0m
+[ 61%] [34m[1mGenerating Lisp code from ohm_arm_interface/RobotarmCtrl.msg[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/arm_interface.dir/src/arm_interface.cpp.o[0m
+Generating reconfiguration files for Reconfigure in ohm_arm_interface
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_arm_interface/include/ohm_arm_interface/ReconfigureConfig.h
+[ 61%] Built target ohm_arm_interface_generate_messages_lisp
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages_cpp[0m
+[ 66%] [34m[1mGenerating C++ code from ohm_arm_interface/RobotarmCtrl.msg[0m
+[ 66%] Built target ohm_arm_interface_gencfg
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages_eus[0m
+[ 72%] [34m[1mGenerating EusLisp code from ohm_arm_interface/RobotarmCtrl.msg[0m
+[ 77%] [34m[1mGenerating Python msg __init__.py for ohm_arm_interface[0m
+[ 83%] [34m[1mGenerating EusLisp manifest code for ohm_arm_interface[0m
+[ 83%] Built target ohm_arm_interface_generate_messages_cpp
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages_nodejs[0m
+[ 88%] [34m[1mGenerating Javascript code from ohm_arm_interface/RobotarmCtrl.msg[0m
+[ 88%] Built target ohm_arm_interface_generate_messages_nodejs
+[ 88%] Built target ohm_arm_interface_generate_messages_py
+[ 88%] Built target ohm_arm_interface_generate_messages_eus
+[35m[1mScanning dependencies of target ohm_arm_interface_generate_messages[0m
+[ 88%] Built target ohm_arm_interface_generate_messages
+[ 94%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_arm_interface/lib/ohm_arm_interface/joy_to_arm[0m
+[ 94%] Built target joy_to_arm
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_arm_interface/lib/ohm_arm_interface/arm_interface[0m
+[100%] Built target arm_interface

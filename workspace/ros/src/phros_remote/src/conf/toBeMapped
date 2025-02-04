@@ -1,0 +1,84 @@
+# Btn Layout
+
+ButtonsPad
+  
+    X = 0,
+    C = 1,
+    T = 2,
+    S = 3,
+    L1 = 4,
+    R1 = 5,
+    L2 = 6,
+    R2 = 7,
+    SL = 8,
+    ST = 9,
+    PS = 10,
+    A1 = 11,
+    A2 = 12,
+    CROSS_LEFT = 13,
+    CROSS_RIGHT = 14,
+    CROSS_UP = 15,
+    CROSS_DOWN = 16
+
+  AxesPad
+  
+    STICK_LEFT_X = 0,
+    STICK_LEFT_Y = 1,
+    STICK_RIGHT_X = 2,
+    STICK_RIGHT_Y = 3,
+    L2 = 4,
+    R2 = 5,
+    LAST
+
+# To Be Mapped
+
+## always
+- toggle Mapper Switcher (btn)
+
+## drive/reverse_drive
+- SpeedControlForward (axis)
+- SpeedControlBackward (axis)
+- turn left/righht (axis)
+
+- SensorHeadPitch (axis)
+- SensorHeadYaw (axis)
+- SensorHeadHome (btn)
+
+- flipperPresetCompact (btn)
+- flipperPresetWshape (btn)
+
+- flipperDirectionUp (btn)
+- flipperDirectionDown (btn)
+- moveFlipperFrontLeft (btn)
+- moveFlipperFrontRight (btn)
+- moveFlipperBackLeft (btn)
+- moveFlipperBackRight (btn)
+
+- switch(reverse)Drive1 (btn)
+- switch(reverse)Drive2 (btn)
+
+## arm
+
+- moveArmForward/Backward (axis)
+- moveArmLeft/Right (axis)
+- moveArmUp/Down (axis)
+
+- openGripper (btn)
+- closeGripper (btn)
+- rotateWristLeft (btn)
+- rotateWristRight (btn)
+- rotateWristUp (btn)
+- rotateWristdown (btn)
+- rotateGripperRight (btn)
+- rotateGripperLeft (btn)
+
+- lookDownOnInspectionBoard (btn)
+- armUpHome (btn)
+- armFold (btn)
+
+
+- changeCoordSystem (btn)
+
+## inspector
+
+

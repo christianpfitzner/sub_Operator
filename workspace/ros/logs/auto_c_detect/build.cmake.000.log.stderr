@@ -1,0 +1,11 @@
+[31m[1mCMake Error[0m at /home/user/workspace/ros/src/ohm_perception/auto_c_detect/CMakeLists.txt:17 (find_package):
+  Could not find a configuration file for package "OpenCV" that is compatible
+  with requested version "2".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+    /lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+
+
+

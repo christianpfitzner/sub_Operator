@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+   <node pkg="joy" name="joy_node" type="joy_node">
+      <param name="dev"              value="/dev/input/js0"   type="string"/>
+      <param name="autorepeat_rate"  value="12.0"/>
+   </node>
+   
+   <node pkg="ohm_joyToVel" type="ohm_joyToVel" name="ohm_joyToVel" output="screen">
+      <param name="loop_rate"					      value="30"/>
+      <param name="twist_topic"                 value="twist" />
+      <param name="joy_publisher_topic"         value="joy/action"/>
+      <param name="vel_publisher_topic"         value="vel/teleop"/>
+      <param name="driving_contour"             value="square"/>
+      <param name="joystickUsed"	               value="false"/>
+      <param name="debug"   	                  value="true"/>
+   </node>
+</launch>

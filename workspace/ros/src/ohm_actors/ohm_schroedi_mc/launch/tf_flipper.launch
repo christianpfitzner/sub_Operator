@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg  name="TFtime"     default="10"      />   
+    <node pkg="tf" type="static_transform_publisher" name="link_b_rb" args="-0.375 0 0 0 0 0 base_link rear_base $(arg TFtime)"/> 
+    <node pkg="tf" type="static_transform_publisher" name="link_b_fb" args="0.375 0 0 0 0 0 base_link front_base $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_fb_frb" args="0 0.2 0 0 0 0 front_base front_right/base $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_fb_flb" args="0 -0.2 0 0 0 0 front_base front_left/base $(arg TFtime)"/> 
+    <node pkg="tf" type="static_transform_publisher" name="link_rb_rrb" args="0 0.2 0 0 0 0 rear_base rear_right/base $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_rb_rlb" args="0 -0.2 0 0 0 0 rear_base rear_left/base $(arg TFtime)"/>
+      
+    <node pkg="tf" type="static_transform_publisher" name="link_frj_frt" args="0.5 0 0 0 0 0 front_right/joint front_right/top $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_flj_flt" args="0.5 0 0 0 0 0 front_left/joint front_left/top $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_rrj_rrt" args="0.5 0 0 0 0 0 rear_right/joint rear_right/top $(arg TFtime)"/>
+    <node pkg="tf" type="static_transform_publisher" name="link_rlj_rlt" args="0.5 0 0 0 0 0 rear_left/joint rear_left/top $(arg TFtime)"/> 	
+</launch>

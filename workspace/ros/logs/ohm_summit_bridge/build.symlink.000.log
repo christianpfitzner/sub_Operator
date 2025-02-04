@@ -1,0 +1,4 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_summit_bridge.pc
+Symlinking /home/user/workspace/ros/devel/lib/ohm_summit_bridge/ohm_summitxl_bridge_node

@@ -1,0 +1,2 @@
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="0458", ATTRS{idProduct}=="708c", SYMLINK+="cam-driver"
+

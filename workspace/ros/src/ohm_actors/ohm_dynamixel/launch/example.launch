@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="ohm_dynamixel" name = "dynamixel_server_example" type="dynamixel_server" output="screen" >
+		<param name = "config_file" type = "string" value = "$(find ohm_dynamixel)/config/bus.xml"/>			
+	</node>
+</launch>

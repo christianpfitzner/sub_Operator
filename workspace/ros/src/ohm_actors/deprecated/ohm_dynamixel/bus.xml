@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>
+  <config baudrate="57600" port="/dev/ttyUSB0" rate="100"/>
+  <servo id="2" topic="foot">
+    <min-pos>1024</min-pos>
+    <max-pos>3072</max-pos>
+    <mid-pos>1024</mid-pos>
+    <torque>0.4</torque>
+    <speed>5.0</speed>
+  </servo>
+  <servo id="3" topic="elbow">
+    <min-pos>2080</min-pos>
+    <max-pos>4084</max-pos>
+    <mid-pos>2080</mid-pos>
+    <torque>0.4</torque>
+    <speed>5.0</speed>
+  </servo>
+  <servo id="4" topic="tool_center">
+    <min-pos>0</min-pos>
+    <max-pos>2048</max-pos>
+    <mid-pos>1024</mid-pos>
+    <torque>0.4</torque>
+    <speed>5.0</speed>
+  </servo>
+</dynamixel-bus>

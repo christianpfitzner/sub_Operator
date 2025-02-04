@@ -1,0 +1,20 @@
+<library path="lib/libco2">
+  <class name="CO2Plugin" type="co2::CO2Plugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An example CPP GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>CO2</label>
+      <icon type="theme">display-capplet</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

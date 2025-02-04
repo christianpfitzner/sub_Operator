@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg = "ohm_gripper" type = "ohm_gripper" name = "ohm_gripper" output = "screen">
+	  <param name = "topic_state_joint5" type = "string"         value = "/joint_5/command"/>
+	  <param name = "topic_state_joint6" type = "string"         value = "/joint_6/command"/>	
+	  <param name = "topic_state_joint7" type = "string"         value = "/joint_7/command"/>	
+	  <param name = "topic_state_state_gripper1" type = "string" value = "/joint_gripper_1/command"/>	
+	  <param name = "topic_state_state_gripper2" type = "string" value = "/joint_gripper_2/command"/>	
+      <param name = "topic_angle_joint5" type = "string"         value = "/joint5/pos/des"/>
+	  <param name = "topic_angle_joint6" type = "string"         value = "/joint6/pos/des"/> 
+      <param name = "topic_angle_joint7" type = "string"         value = "/joint7/pos/des"/> 	
+      <param name = "topic_angle_gripper1" type = "string"       value = "/gripper1/pos/des"/> 	
+      <param name = "topic_angle_gripper2" type = "string"       value = "/gripper2/pos/des"/>
+      <param name = "gripper_sleep_angle"  type = "double" 	 	 value = "-1.1"/>
+      <param name = "thresh_time_sleep"    type = "double"       value = "1.0"/>
+    </node>
+    <node pkg="ohm_dynamixel" name = "dynamixel_server_gripper" type="dynamixel_server" output = "screen">
+	  <param name = "config_file" type = "string" value = "$(find ohm_gripper)/config/gripper_dxl.xml"/>			
+	</node>	
+</launch>

@@ -1,0 +1,8 @@
+build/
+devel/
+install/
+.cproject
+.catkin_workspace
+.project
+src/CMakeLists.txt
+.settings/

@@ -1,0 +1,25 @@
+[  3%] Built target sensor_msgs_generate_messages_cpp
+[  3%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/include/ohm_sensors_gripper2/sensorConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/lib/python3/dist-packages/ohm_sensors_gripper2/cfg/sensorConfig.py[0m
+[  3%] Built target sensor_msgs_generate_messages_eus
+[  3%] Built target sensor_msgs_generate_messages_py
+[  3%] Built target sensor_msgs_generate_messages_lisp
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_tof_sensor
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_error_detection
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_from_light_control
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_to_light_control
+[  3%] Built target _ohm_sensors_gripper2_generate_messages_check_deps_hall
+[  3%] Built target sensor_msgs_generate_messages_nodejs
+[ 18%] Built target ohm_sensors_gripper2_generate_messages_lisp
+[ 36%] Built target ohm_sensors_gripper2_generate_messages_eus
+[ 54%] Built target ohm_sensors_gripper2_generate_messages_py
+[ 69%] Built target ohm_sensors_gripper2_generate_messages_cpp
+[ 84%] Built target ohm_sensors_gripper2_generate_messages_nodejs
+Generating reconfiguration files for Sensor in ohm_sensors_gripper2
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/include/ohm_sensors_gripper2/SensorConfig.h
+[ 84%] Built target ohm_sensors_gripper2_generate_messages
+[ 84%] Built target ohm_sensors_gripper2_gencfg
+[35m[1mScanning dependencies of target serial_node[0m
+[ 90%] Built target light_control_node
+[ 93%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/SensorGripperNode.cpp.o[0m
+[ 96%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper2/lib/ohm_sensors_gripper2/serial_node[0m
+[100%] Built target serial_node

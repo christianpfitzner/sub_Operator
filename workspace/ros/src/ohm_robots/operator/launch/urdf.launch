@@ -1,0 +1,18 @@
+<launch>
+  <param name="georg_chassis" textfile="/home/knueppl/ros/ohm_robots/src/georg/urdf/georg.urdf" />
+  <node name="georg_chassis_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <remap from="robot_description" to="georg_chassis"/>
+  </node>
+
+  <param name="georg_sensor_head_yaw" textfile="/home/knueppl/ros/ohm_robots/src/georg/urdf/sensor-head-yaw.urdf" />
+  <node name="georg_sensor_head_yaw_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <remap from="robot_description" to="georg_sensor_head_yaw"/>
+  </node>
+
+  <param name="georg_sensor_head_pitch"
+         textfile="/home/knueppl/ros/ohm_robots/src/georg/urdf/sensor-head-pitch.urdf"/>
+  <node name="georg_sensor_head_pitch_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <remap from="robot_description" to="georg_sensor_head_pitch"/>
+  </node>
+
+</launch>

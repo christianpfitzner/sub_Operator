@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsdf_pdf_config>
+  <trials>100</trials> 
+  <epsthresh>0.15f</epsthresh>
+  <sizeControlSet>360</sizeControlSet>
+  <zrand>0.05</zrand>
+  <ranphimax>45.0</ranphimax>
+  <reg_trs_max>1.0</reg_trs_max>   <!-- this parameter is not used in obviously -->
+</tsdf_pdf_config>

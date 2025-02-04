@@ -1,0 +1,32 @@
+sensor_head_pan:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: tilt_joint_pan
+    joint_speed: 2.0
+    torque_limit: 1.0
+    slope: 8.0
+    #margin: 5.0
+    #punch: 1.0
+    motor:
+        id: 2
+        init: 2048
+        min: 1
+        max: 4095
+sensor_head_tilt:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: tilt_joint_tilt
+    joint_speed: 2.00
+    torque_limit: 1.0
+    slope: 8.0
+    #margin: 5.0
+    #punch: 1.0
+    motor:
+        id: 3
+        init: 2048
+        min: 1400
+        max: 3100

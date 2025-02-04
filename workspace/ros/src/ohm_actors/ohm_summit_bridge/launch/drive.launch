@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="ohm_summit_bridge" type="ohm_summitxl_bridge_node" name="ohm_summitxl_bridge_node">
+        <param name="sub_topic_name_twist"  value="/simon/vel/teleop" 	  type="string"/>
+        <param name="ip_summit_base"        value="192.168.1.61"  type="string"/>
+    </node>
+</launch>

@@ -1,0 +1,2 @@
+ohm_manipulation/ohm_manipulation
+/home/user/workspace/ros/devel/.private/ohm_manipulation/cmake.lock /home/user/workspace/ros/devel/./cmake.lock

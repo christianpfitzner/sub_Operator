@@ -1,0 +1,5 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_inverse/cmake/ohm_inverseConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_inverse/cmake/ohm_inverseConfig.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_inverse.pc
+Symlinking /home/user/workspace/ros/devel/lib/ohm_inverse/ohm_inverse_node
+Symlinking /home/user/workspace/ros/devel/lib/ohm_inverse/joint_feedback_node

@@ -1,0 +1,17 @@
+float64 xe
+float64 ye
+float64 ze
+uint8 change_coordinate_system
+uint8 initial_pose
+uint8 initial_up
+uint8 initial_look_down
+uint8 initial_tunnel_side
+uint8 initial_tunnel_up
+uint8 rplus 
+uint8 rminus
+uint8 pplus 
+uint8 pminus
+uint8 yplus 
+uint8 yminus
+uint8 grauf 
+uint8 grzu  

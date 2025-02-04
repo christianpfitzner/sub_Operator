@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HudMain</class>
+ <widget class="QMainWindow" name="HudMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hud</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="phros_remote::WidgetMain" name="widget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Maintenance">
+    <property name="title">
+     <string>&amp;Maintenance</string>
+    </property>
+    <addaction name="actionArmReset"/>
+    <addaction name="actionDrivesReset"/>
+   </widget>
+   <addaction name="menu_Maintenance"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionArmReset">
+   <property name="text">
+    <string>&amp;Arm Reset</string>
+   </property>
+  </action>
+  <action name="actionDrivesReset">
+   <property name="text">
+    <string>&amp;Drives Reset</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>phros_remote::WidgetMain</class>
+   <extends>QWidget</extends>
+   <header>WidgetMain.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2 @@
+#
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403",  ATTRS{serial}=="XSUP44UH", SYMLINK+="tilt-scanner"

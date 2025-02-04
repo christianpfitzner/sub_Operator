@@ -1,0 +1,3 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_us_ring/cmake/ohm_us_ringConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_us_ring/cmake/ohm_us_ringConfig.cmake
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_us_ring.pc

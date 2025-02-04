@@ -1,0 +1,84 @@
+[  2%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor_gripper.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/sensor_gripperConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/python3/dist-packages/ohm_sensors_gripper/cfg/sensor_gripperConfig.py[0m
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_error_detection
+Generating reconfiguration files for SensorGripper in ohm_sensors_gripper
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/SensorGripperConfig.h
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_single_obj
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_objects
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_sensors
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_from_light_control
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  4%] [32mBuilding CXX object CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_tof_calibration_node.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_serial.cpp.o[0m
+[  7%] Built target sensor_msgs_generate_messages_py
+[  7%] Built target ohm_sensors_gripper_gencfg
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  7%] Built target _ohm_sensors_gripper_generate_messages_check_deps_to_light_control
+[  7%] Built target sensor_msgs_generate_messages_nodejs
+[  7%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  7%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages_py[0m
+[  9%] [34m[1mGenerating C++ code from ohm_sensors_gripper/tof_single_obj.msg[0m
+[ 12%] [34m[1mGenerating C++ code from ohm_sensors_gripper/tof_objects.msg[0m
+[ 14%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/tof_single_obj[0m
+[ 17%] [34m[1mGenerating C++ code from ohm_sensors_gripper/tof_sensors.msg[0m
+[ 19%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/tof_objects[0m
+[ 21%] [34m[1mGenerating C++ code from ohm_sensors_gripper/from_light_control.msg[0m
+[ 24%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/tof_sensors[0m
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_serial.cpp:13[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_sensors_gripper/src/sensor_gripper_serial.h:36:10:[m[K [01;31m[Kfatal error: [m[Kohm_sensors_gripper/error_detection.h: No such file or directory
+   36 | #include [01;31m[K<ohm_sensors_gripper/error_detection.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tof_calibration_node.dir/build.make:63: CMakeFiles/tof_calibration_node.dir/src/sensor_gripper_serial.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 26%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/from_light_control[0m
+[ 29%] [34m[1mGenerating C++ code from ohm_sensors_gripper/to_light_control.msg[0m
+[ 31%] [34m[1mGenerating C++ code from ohm_sensors_gripper/error_detection.msg[0m
+[ 34%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/to_light_control[0m
+[ 36%] [34m[1mGenerating Python from MSG ohm_sensors_gripper/error_detection[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages_eus[0m
+[ 39%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/tof_single_obj.msg[0m
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages_lisp[0m
+[ 41%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/tof_single_obj.msg[0m
+[ 43%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/tof_single_obj.msg[0m
+[ 43%] Built target ohm_sensors_gripper_generate_messages_cpp
+[ 46%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/tof_objects.msg[0m
+[ 48%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/tof_objects.msg[0m
+[ 51%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/tof_objects.msg[0m
+[ 53%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/tof_sensors.msg[0m
+[ 56%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/tof_sensors.msg[0m
+[ 58%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/tof_sensors.msg[0m
+[ 60%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/from_light_control.msg[0m
+[ 63%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/to_light_control.msg[0m
+[ 65%] [34m[1mGenerating Python msg __init__.py for ohm_sensors_gripper[0m
+[ 70%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/from_light_control.msg[0m
+[ 70%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/from_light_control.msg[0m
+[ 73%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/to_light_control.msg[0m
+[ 75%] [34m[1mGenerating Lisp code from ohm_sensors_gripper/error_detection.msg[0m
+[ 78%] [34m[1mGenerating EusLisp code from ohm_sensors_gripper/error_detection.msg[0m
+[ 82%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/to_light_control.msg[0m
+[ 82%] [34m[1mGenerating EusLisp manifest code for ohm_sensors_gripper[0m
+[ 85%] [34m[1mGenerating Javascript code from ohm_sensors_gripper/error_detection.msg[0m
+[ 85%] Built target ohm_sensors_gripper_generate_messages_lisp
+[35m[1mScanning dependencies of target serial_node[0m
+[ 85%] Built target ohm_sensors_gripper_generate_messages_nodejs
+[ 87%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/sensor_gripper_serial_node.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/sensor_gripper_serial.cpp.o[0m
+[35m[1mScanning dependencies of target light_control_node[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/light_control_node.dir/src/sensor_gripper_light_control_node.cpp.o[0m
+[ 92%] Built target ohm_sensors_gripper_generate_messages_py
+[ 92%] Built target ohm_sensors_gripper_generate_messages_eus
+[35m[1mScanning dependencies of target ohm_sensors_gripper_generate_messages[0m
+[ 92%] Built target ohm_sensors_gripper_generate_messages
+make[1]: *** [CMakeFiles/Makefile2:688: CMakeFiles/tof_calibration_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 95%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/ohm_sensors_gripper/light_control_node[0m
+[ 95%] Built target light_control_node
+[ 97%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/ohm_sensors_gripper/serial_node[0m
+[ 97%] Built target serial_node
+make: *** [Makefile:141: all] Error 2

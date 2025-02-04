@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+ <!--<include file = "$(find simon)/launch/sensor_head.launch"/>
+ <include file = "$(find ohm_joy)/launch/joy_schroed.launch"/>
+ 
+ <node pkg="tf" type="static_transform_publisher" name="link_floor_table" args="0 0 0.7 0 0 0 base_footprint base_link 10"/>
+ <node pkg="tf" type="static_transform_publisher" name="link_base_pan" args="0 0 0.1 0 0 0 base_link simon/sensor_head/yaw/base 10"/>
+ <node pkg="tf" type="static_transform_publisher" name="pan_base_tilt" args="0 0 0.075 0 0 0 simon/sensor_head/yaw/rotated simon/sensor_head/pitch/base  10"/>
+ <node pkg="tf" type="static_transform_publisher" name="pan_rot_cam" args="0 0 0.045 0 0 0 simon/sensor_head/pitch/rotated camera_link 10"/>-->
+
+ <include file = "$(find realsense2_camera)/launch/rs_rgbd.launch"/> 
+<!--<include file = "$(find openni2_launch)/launch/openni2.launch"/> -->
+
+<!--<include file="$(find openni)/launch/openni.launch"/>-->
+<group ns="camera"> 
+   <!-- Throttling openni images at 5 Hz 
+    <node pkg="nodelet" type="nodelet" name="data_throttle" args="load rtabmap_ros/data_throttle camera_nodelet_manager">
+      <param name="rate" type="double" value="5"/>
+   
+      <remap from="rgb/image_in"       to="rgb/image_rect_color"/>
+      <remap from="depth/image_in"     to="depth_registered/image_raw"/>
+      <remap from="rgb/camera_info_in" to="depth_registered/camera_info"/>
+    
+      <remap from="rgb/image_out"       to="rgb/image_rect_color_throttled"/>
+      <remap from="depth/image_out"     to="depth_registered/image_raw_throttled"/>
+      <remap from="rgb/camera_info_out" to="depth_registered/camera_info_throttled"/>
+    </node> -->
+
+    <!-- Create point clouds -->
+    <node pkg="nodelet" type="nodelet" name="points_xyz" args="load rtabmap_ros/point_cloud_xyz camera_nodelet_manager" output="screen">
+      <!--<remap from="rgb/image"        to="color/image_rect_color"/>-->
+      <remap from="depth/image"      to="aligned_depth_to_color/image_raw"/>
+      <remap from="depth/camera_info"  to="aligned_depth_to_color/camera_info"/>
+      <remap from="cloud" to="cloudxyz"/>
+    </node>
+</group> 
+
+
+</launch> 

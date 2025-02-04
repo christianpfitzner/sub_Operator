@@ -1,0 +1,10 @@
+Widget 'lcdNumber48': Deprecated property QLCDNumber::numDigits encountered. It has been replaced by QLCDNumber::digitCount.
+Widget 'lcdNumber24': Deprecated property QLCDNumber::numDigits encountered. It has been replaced by QLCDNumber::digitCount.
+In file included from [01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_power_unit/src/HealthPlugin.cpp:8[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_sensors/ohm_power_unit/src/HealthPlugin.h:18:10:[m[K [01;31m[Kfatal error: [m[Kohm_power_unit/pu.h: No such file or directory
+   18 | #include [01;31m[K"ohm_power_unit/pu.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/health_plugin.dir/build.make:71: CMakeFiles/health_plugin.dir/src/HealthPlugin.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/health_plugin.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

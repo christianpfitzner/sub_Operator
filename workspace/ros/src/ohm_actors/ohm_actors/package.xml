@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>ohm_actors</name>
+  <version>0.0.0</version>
+  <description>The ohm_actors package</description>
+
+
+  <maintainer email="mkuehn@todo.todo">mkuehn</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>ohm_actors_msgs</run_depend>
+  <run_depend>ohm_dynamixel</run_depend>
+  <run_depend>ohm_escon_dual_controller</run_depend>
+  <run_depend>ohm_inspector</run_depend>
+  <run_depend>ohm_sensor_head</run_depend>
+  <run_depend>ohm_summit_bridge</run_depend>
+
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

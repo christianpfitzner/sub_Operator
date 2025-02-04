@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>
+  <config baudrate="500000" port="/dev/sensor-head" protocol_version="1.0" scan_range="4"/>
+  <servo id="2" name="pan" speed="400" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1"/>
+  <servo id="1" name="tilt" speed="400" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1" mode="current"/>
+</dynamixel-bus>
+
+<!-- 1000000  500000  200000 117647 57142 -->

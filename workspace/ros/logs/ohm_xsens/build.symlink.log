@@ -1,0 +1,4 @@
+Symlinking /home/user/workspace/ros/devel/share/ohm_xsens/cmake/ohm_xsensConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/ohm_xsens/cmake/ohm_xsensConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/ohm_xsens/ohm_xsens_node
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ohm_xsens.pc

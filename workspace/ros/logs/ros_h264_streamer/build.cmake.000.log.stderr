@@ -1,0 +1,17 @@
+[33m[1mCMake Warning[0m at /home/user/workspace/ros/src/ros_h264_streamer/CMakeLists.txt:28 (find_package):
+  By not providing "Finddynamic_graph_bridge_msgs.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "dynamic_graph_bridge_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "dynamic_graph_bridge_msgs" with any of the following names:
+
+    dynamic_graph_bridge_msgsConfig.cmake
+    dynamic_graph_bridge_msgs-config.cmake
+
+  Add the installation prefix of "dynamic_graph_bridge_msgs" to
+  CMAKE_PREFIX_PATH or set "dynamic_graph_bridge_msgs_DIR" to a directory
+  containing one of the above files.  If "dynamic_graph_bridge_msgs" provides
+  a separate development package or SDK, be sure it has been installed.
+
+

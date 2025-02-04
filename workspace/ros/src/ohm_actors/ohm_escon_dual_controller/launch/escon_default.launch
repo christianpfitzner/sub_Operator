@@ -1,0 +1,12 @@
+<launch>
+   <node pkg="ohm_escon_dual_controller" type="ohm_escon_dual_controller_node" name="ohm_escon_dual_controller_node"
+      output="screen">
+      <param name="sub_name"               value="vel/twist"/>
+      <param name="arduino_device"         value="/dev/escon_controller" />
+      <param name="use_stamped"            value="true"/>
+      <param name="gear_ratio"             value="74.0"/>
+      <param name="wheel_diameter"         value="0.245"/>
+      <param name="wheelbase"              value="0.435"/>
+      <param name="rpm_max"                value="7580"/>
+   </node>
+</launch>

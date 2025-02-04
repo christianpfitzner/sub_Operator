@@ -1,0 +1,52 @@
+<launch>
+    
+    <arg name="tf_cam_frame"         default="cam_frame"  />   
+    <arg name="tf_laser_frame"       default="scan"                   />
+    <arg name="tf_qr_frame"          default="tf_qr"                   />
+    <arg name="tf_map_frame"         default="map"                     />
+  
+    <arg name="qr_topic"             default="/qr/driver"              />
+    <arg name="laser_topic"          default="scan"                    />
+       
+    <arg name="cam_subscriber_topic" default="/image_raw"              />
+    <arg name="qr_image_pub_topic"   default="/image/qr"               />
+    
+  
+        
+    <node pkg="ohm_qr_detection" type="ohm_qr_detection_node" name="ohm_qr_detection_node" output="screen">
+      <param name="qr_topic"                    type="string"  value="$(arg qr_topic)"/>
+      <param name="cam_subscriber_topic"        type="string"  value="$(arg cam_subscriber_topic)"/>
+      <param name="cam_publisher_topic"         type="string"  value="$(arg qr_image_pub_topic)"/>
+      <param name="cam_width"                   type="int"     value="640"/>
+      <param name="cam_height"                  type="int"     value="480"/>
+      <param name="rate"                        type="double"  value="10.0  "/>
+      <param name="robot_radius"                type="double"  value="0.35"/>
+   </node>      
+
+   
+   
+   <node pkg="ohm_qr_detection" type="ohm_qr_to_world_node" name="ohm_qr_toworld_node" output="screen">
+      <param name="qr_topic"                    type="string"  value="$(arg qr_topic)"/>
+      <param name="laser_topic"                 type="string"  value="$(arg laser_topic)"/>
+      <param name="tf_qr_frame"                 type="string"  value="$(arg tf_qr_frame)"/>
+      <param name="tf_laser_frame"              type="string"  value="$(arg tf_laser_frame)"/>
+      <param name="tf_cam_frame"                type="string"  value="$(arg tf_cam_frame)"/>
+      <param name="tf_map_frame"                type="string"  value="$(arg tf_map_frame)"/>
+      <param name="qr_intersection_frame"       type="string"  value="/qr/candidate"/>
+   </node>     
+
+
+   
+   <node pkg="ohm_qr_detection" type="ohm_qr_stack_node" name="ohm_qr_stack_node" output="screen">
+      <param name="qr_intersection_frame"       type="string"  value="/qr/candidate"/>
+      <param name="qr_markers_topic"            type="string"  value="/qr/markers"/>
+      <param name="qr_txt_adress"               type="string"  value="/home/chris/QrCodesLocalization.txt"/>
+   </node>  
+
+
+
+   <node pkg="tf" type="static_transform_publisher" name="test_map_cam"       args="0 0 0 0 0 0    laser     				   scan       10"/> 
+   <node pkg="tf" type="static_transform_publisher" name="test_map_laser"     args="0 0 0.1 0 0 0    $(arg tf_laser_frame)   $(arg tf_cam_frame)         10"/>
+   
+</launch>
+ 

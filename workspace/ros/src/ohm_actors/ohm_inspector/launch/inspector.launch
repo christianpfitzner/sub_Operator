@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="ohm_inspector_mount_point_broadcaster" args="-0.5 -0.2 0 0 0 0 base ohm_inspector/base 100" />
+    <node name="inspector_node" pkg="ohm_inspector" type="inspector_node" output="screen">
+        <param name="topicName"         value="inspector_cmd"               type="string"/>
+        <param name="serialPort"        value="/dev/opencm_inspector"       type="string"/>
+        <param name="timeoutMS"         value="250"                         type="int"/>
+        <param name="maxErrorCnt"       value="5"                           type="int"/>
+        <param name="updateFrequencyHz" value="25.0"                        type="double"/>	
+        <param name="speed2DScale"      value="200.0"                       type="double"/>
+        <param name="speedAxisScale"    value="4.0"                         type="double"/>
+    </node>
+</launch>

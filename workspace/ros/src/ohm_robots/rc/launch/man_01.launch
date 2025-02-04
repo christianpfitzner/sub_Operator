@@ -1,0 +1,4 @@
+<launch>
+	<include file="general/sensors.launch"/>
+	<include file="general/actors.launch"/>
+</launch>

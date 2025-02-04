@@ -1,0 +1,36 @@
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In constructor ‘[01m[Kphros_remote::MapperDrive::MapperDrive(ros::NodeHandle&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:58:44:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   58 |   ros::Subscriber _flupper_angle_sub = _nh.[01;31m[Ksubscribe<[m[K
+      |                                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:58:44:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[K<unresolved overloaded function type>[m[K’ to non-scalar type ‘[01m[Kros::Subscriber[m[K’ requested
+   58 |   ros::Subscriber _flupper_angle_sub = [01;31m[K_nh.subscribe<[m[K
+      |                                        [01;31m[K~~~~^~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDrive::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:128:43:[m[K [01;31m[Kerror: [m[K‘[01m[KCROSS_L[m[K’ is not a member of ‘[01m[Kphros_remote::MapperPsPad::ButtonsPad[m[K’; did you mean ‘[01m[KCROSS_UP[m[K’?
+  128 |   if(msg->button(MapperPsPad::ButtonsPad::[01;31m[KCROSS_L[m[K))
+      |                                           [01;31m[K^~~~~~~[m[K
+      |                                           [32m[KCROSS_UP[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:135:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kphros_remote::MapperPsPad::ButtonPad[m[K’ has not been declared
+  135 |   if(msg->button(MapperPsPad::[01;31m[KButtonPad[m[K::CROSS_R))
+      |                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In constructor ‘[01m[Kphros_remote::MapperDrive::MapperDrive(ros::NodeHandle&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:58:44:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   58 |   ros::Subscriber _flupper_angle_sub = _nh.[01;31m[Ksubscribe<[m[K
+      |                                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:58:44:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[K<unresolved overloaded function type>[m[K’ to non-scalar type ‘[01m[Kros::Subscriber[m[K’ requested
+   58 |   ros::Subscriber _flupper_angle_sub = [01;31m[K_nh.subscribe<[m[K
+      |                                        [01;31m[K~~~~^~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDrive::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:128:43:[m[K [01;31m[Kerror: [m[K‘[01m[KCROSS_L[m[K’ is not a member of ‘[01m[Kphros_remote::MapperPsPad::ButtonsPad[m[K’; did you mean ‘[01m[KCROSS_UP[m[K’?
+  128 |   if(msg->button(MapperPsPad::ButtonsPad::[01;31m[KCROSS_L[m[K))
+      |                                           [01;31m[K^~~~~~~[m[K
+      |                                           [32m[KCROSS_UP[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDrive.cpp:135:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kphros_remote::MapperPsPad::ButtonPad[m[K’ has not been declared
+  135 |   if(msg->button(MapperPsPad::[01;31m[KButtonPad[m[K::CROSS_R))
+      |                               [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:354: CMakeFiles/menu_test.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:311: CMakeFiles/phros_remote.dir/src/mappers/MapperDrive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

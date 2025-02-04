@@ -1,0 +1,21 @@
+<library path="ohm_gripper/librqt_gripper">
+  <class name="RqtPluginGripper" type="ohm_gripper::RqtPluginGripper" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      Plugin to manipulate the gripper
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Gripper Plugin</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
+

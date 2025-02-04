@@ -1,0 +1,6 @@
+ohm_actors/ohm_summit_bridge
+/home/user/workspace/ros/devel/.private/ohm_summit_bridge/cmake.lock /home/user/workspace/ros/devel/./cmake.lock
+/home/user/workspace/ros/devel/.private/ohm_summit_bridge/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig-version.cmake /home/user/workspace/ros/devel/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig-version.cmake
+/home/user/workspace/ros/devel/.private/ohm_summit_bridge/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig.cmake /home/user/workspace/ros/devel/share/ohm_summit_bridge/cmake/ohm_summit_bridgeConfig.cmake
+/home/user/workspace/ros/devel/.private/ohm_summit_bridge/lib/pkgconfig/ohm_summit_bridge.pc /home/user/workspace/ros/devel/lib/pkgconfig/ohm_summit_bridge.pc
+/home/user/workspace/ros/devel/.private/ohm_summit_bridge/lib/ohm_summit_bridge/ohm_summitxl_bridge_node /home/user/workspace/ros/devel/lib/ohm_summit_bridge/ohm_summitxl_bridge_node

@@ -1,0 +1,5 @@
+ohm_robots/operator
+/home/user/workspace/ros/devel/.private/operator/cmake.lock /home/user/workspace/ros/devel/./cmake.lock
+/home/user/workspace/ros/devel/.private/operator/share/operator/cmake/operatorConfig.cmake /home/user/workspace/ros/devel/share/operator/cmake/operatorConfig.cmake
+/home/user/workspace/ros/devel/.private/operator/share/operator/cmake/operatorConfig-version.cmake /home/user/workspace/ros/devel/share/operator/cmake/operatorConfig-version.cmake
+/home/user/workspace/ros/devel/.private/operator/lib/pkgconfig/operator.pc /home/user/workspace/ros/devel/lib/pkgconfig/operator.pc

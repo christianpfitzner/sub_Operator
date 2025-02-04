@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynamixel-bus>
+  <config baudrate="57200" port="/dev/ttyUSB0" protocol_version="1.0" scan_range="5"/>
+  <servo id="4" name="gripper" speed="200" acceleration="50" pubPos="1" pubVel="1" pubCurrent="1" mode = "1" /> 
+</dynamixel-bus>
+
+<!-- 1000000  500000  200000 117647 57142 -->

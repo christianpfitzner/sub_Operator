@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- Joystick Knoten -->
+<node respawn="true" pkg="joy" type="joy_node" name="joy" >
+  <param name="dev" type="string" value="/dev/input/js0" />
+  <param name="deadzone" value="0.18" />
+  <param name="autorepeat_rate" value="100.0"/>
+</node>
+
+<node pkg="ohm_arm_interface" type="joy_to_arm" name="joy_to_arm"/>
+
+<!--  Zwei Knoten zur Berechnung der Inversen Kinematik -->
+<!--  <node pkg="ohm_move"    type="ohm_move_node"    name="ohm_move_node"   output="screen"  /> -->
+<node pkg="ohm_inverse" type="ohm_inverse_node" name="ohm_inverse_node" output="screen"  />
+<include file="$(find ohm_arm_interface)/launch/arm_interface.launch"/>
+
+<!--  Einfügen des TF Baums -->
+<include file="$(find schroedi)/launch/tf.launch"   />
+
+<!-- Load URDF to parameter server -->
+<param name="robot_description" textfile="$(find ohm_robotarm)/data/ohm_robotarm.urdf" type="string" />
+
+
+<!-- Robot states publisher -->
+<!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" /> -->
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" >
+  <rosparam param="publish_frequency">100.0</rosparam>
+</node>
+
+<!-- Joint state publisher for urdf-->
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+  <rosparam param="source_list">["joint_visual", "flipper_states"]</rosparam>
+  <rosparam param="rate"> 100 </rosparam>
+</node>
+
+
+
+<arg name="debug" default="false" />
+<arg unless="$(arg debug)" name="launch_prefix" value="" />
+<arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+<arg name="config" default="true" />
+<arg unless="$(arg config)" name="command_args" value="" />
+<arg     if="$(arg config)" name="command_args" value="-d $(find ohm_robotarm)/launch/manual.rviz" />
+
+<node name="$(anon rviz)" pkg="rviz" type="rviz" respawn="false" args="$(arg command_args)"/>
+
+
+</launch>

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:24:10:[m[K [01;31m[Kfatal error: [m[Kohm_can_interface/CAN.h: No such file or directory
+   24 | #include [01;31m[K<ohm_can_interface/CAN.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/ohm_can_interface.dir/build.make:63: CMakeFiles/ohm_can_interface.dir/src/canopen_OD.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:572: CMakeFiles/ohm_can_interface.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target joint_feedback_node[0m
+[35m[1mScanning dependencies of target ohm_inverse_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ohm_inverse_node.dir/src/CyclicCoordinateDescent/rt_nonfinite.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/joint_feedback_node.dir/src/joint_feedback_node.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ohm_inverse_node.dir/src/CyclicCoordinateDescent/rtGetNaN.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ohm_inverse_node.dir/src/ohm_inverse_node.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ohm_inverse_node.dir/src/CyclicCoordinateDescent/CyclicCoordinateDescent.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ohm_inverse_node.dir/src/CyclicCoordinateDescent/rtGetInf.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_inverse/lib/ohm_inverse/joint_feedback_node[0m
+[100%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_inverse/lib/ohm_inverse/ohm_inverse_node[0m
+[100%] Built target joint_feedback_node
+[100%] Built target ohm_inverse_node

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="xsens_driver" pkg="xsens_driver" type="mtnode.py" respawn="true">
+    <param name="device" type="string" value="/dev/xsens"/>
+  </node>
+
+  <node name="ohm_xsens_node" pkg="ohm_xsens" type="ohm_xsens_node" output="screen">
+    <param name="sub_imu"     type="string" value="imu/data"/>
+    <param name="frame_id   " type="string" value="map"/>
+    <param name="frame_robot" type="string" value="schroedi/center"/>
+    <param name="frame_imu  " type="string" value="schroedi/base"/>
+  </node>
+
+  <node pkg="tf"  type="static_transform_publisher" name = "tf_xsens_imu_0" args = "0.0 0.0 0.0 0.0 0.0 1.6 schroedi/base corrected 10 "/>
+  <node pkg="tf"  type="static_transform_publisher" name = "tf_xsens_imu_1" args = "0.0 0.0 0.0 1.6 0.0 0.0 corrected overcorrected 10"/>
+  <node pkg="tf"  type="static_transform_publisher" name = "tf_xsens_imu_2" args = "0.0 0.0 0.0 3.14 0.0 0.0 overcorrected fucku 10"/>  
+</launch>

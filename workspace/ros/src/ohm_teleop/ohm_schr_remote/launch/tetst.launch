@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>	
+  <node pkg="joy"	    type="joy_node"        name="joy_node">
+	<param name="autorepeat_rate" value="20.0"/>
+    <param name="dev" value="/dev/input/js0"/>
+  </node>
+  <node pkg = "ohm_schr_remote" type = "schr_remote" name = "schr_remote" output = "screen">
+    <param name="topic_twist" type = "string" value = "/vel/cmd"/>
+    <param name="folder_pics" type = "string" value = "$(find ohm_schr_remote)/src/hud/menu_pics"/>
+  </node>
+  
+<!--   <include file = "$(find ohm_schroedi_mc)/launch/schroedi_mc.launch"/>  -->
+<!--  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node">
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="1280" />
+    <param name="image_height" value="720" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+  </node> -->
+</launch>

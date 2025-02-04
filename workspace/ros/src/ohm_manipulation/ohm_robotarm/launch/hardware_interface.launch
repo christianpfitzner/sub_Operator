@@ -1,0 +1,66 @@
+<launch>
+ <!-- <group ns="ohm_robotarm" > -->
+    <!-- By default drives are not reseted -->
+    <arg name="reset_drives" default="true" />
+    
+    <!-- Load URDF to parameter server -->
+    <param name="robot_description" textfile="$(find ohm_robotarm)/data/ohm_robotarm.urdf" type="string" />
+    
+    <!-- The semantic description that corresponds to the URDF -->
+    <param name="robot_description_semantic" textfile="$(find ohm_robotarm)/config/ohm_robotarm.srdf" />
+    
+    <!-- Load configuration files to parameter server -->
+    <rosparam command="load" file="$(find ohm_robotarm)/config/robotarm_interface.yaml"/>
+    
+    <!-- Load updated joint limits (override information from URDF) -->
+    <group ns="robot_description_planning">
+     <rosparam command="load" file="$(find ohm_robotarm)/config/joint_limits.yaml"/>
+    </group>
+
+    <!-- Load default settings for kinematics -->
+    <group ns="robot_description_kinematics">
+      <rosparam command="load" file="$(find ohm_robotarm)/config/kinematics.yaml"/>
+    </group>
+ 
+    <!-- Launch serial can interface -->
+  	<node name="can_interface" pkg="ohm_can_interface" type="serial_can" output="screen">
+    	<param name="serialPortPath"    value="/dev/ohm_serial_can"      type="string"/>
+    	<param name="updateFrequencyHz" value="500.0"                    type="double"/>	
+    	<param name="maxTimeoutMS" 		value="100"                      type="int"/>	
+  	</node>
+ 
+    <!-- Load sim drives -->
+    <node name="ohm_sim_drives" pkg="ohm_robotarm" type="sim_drives" output="screen" />
+    
+    <!-- Load elmo drives -->
+    <node name="ohm_elmo_drives" pkg="ohm_robotarm" type="elmo_drives" output="screen" >
+        <!-- Warning: IF this is true -> ALL DRIVES WILL RELEASE! -->
+        <param name="reset_drives" value="$(arg reset_drives)" type="bool" />
+    </node> 
+    
+    <!-- Load dynamixel drives -->
+    <node name="ohm_dynamixel_drives" pkg="ohm_robotarm" type="dynamixel_drives" output="screen" >
+    	<param name="serialPortPath"    value="/dev/opencm_robotarm"     	      type="string"/>
+    </node>
+    
+    <!-- Joint state publisher -->
+<!--    <node name="ohm_joint_state_publisher" pkg="ohm_robotarm" type="joint_state_publisher" output="screen" />  -->
+    
+    <!-- Robot states publisher -->
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" /> -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" >
+    <rosparam param="publish_frequency">200.0</rosparam>
+    </node>
+<!--  </group> -->
+
+<!-- Robot states publisher -->
+<!--    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />  -->
+
+<!-- Joint state publisher for urdf-->
+   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam param="source_list">["joints_real", "flipper_states"]</rosparam>
+        <rosparam param="rate"> 100 </rosparam>
+   </node>
+   <node pkg = "ohm_inverse" type = "joint_feedback_node" name = "joint_feedback_node"/>
+
+</launch>

@@ -1,0 +1,32 @@
+Firmware for the OpenCM9.04 board used to control the inspector
+Makefile description:
+Use "make" to build the project
+Use "make flash" to flash the program to an OpenCM board -> the port can be changed in core/robotis-loader
+If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated.
+Use "make clean" to clean up project -> use make clean before commit with git!
+
+Install ARM EABI compiler from code sourcery
+
+#download
+wget https://sourcery.mentor.com/sgpp/lite/arm/portal/package8736/public/arm-none-eabi/arm-2011.03-42-arm-none-eabi.bin
+
+#Modify dash
+sudo dpkg-reconfigure -plow dash 
+#ANSWER WITH NO!
+
+# Now bash is the default /bin/sh and not dash!
+ls -lh /bin/sh
+
+# Create the install dir.
+mkdir -p  /home/feesma44884/Programme/arm-2011.03-42-arm-none-eabi
+
+#Start installer
+/bin/sh arm-2011.03-42-arm-none-eabi.bin
+
+#Install options:
+- minimal installation
+- install dir (see above)
+- No add to path!
+- Don't create links
+
+#Finished

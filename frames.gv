@@ -1,0 +1,17 @@
+digraph G {
+"laser_mount_link" -> "laser"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1721043227.204 sec old)\nBuffer length: 0.000 sec\n"];
+"sensor_head/yaw/base" -> "sensor_head/yaw/rotated"[label="Broadcaster: /sensor_head\nAverage rate: 50.202 Hz\nMost recent transform: 1721043247.651 ( -20.447 sec old)\nBuffer length: 4.960 sec\n"];
+"sensor_head/pitch/base" -> "sensor_head/pitch/rotated"[label="Broadcaster: /sensor_head\nAverage rate: 50.202 Hz\nMost recent transform: 1721043247.651 ( -20.447 sec old)\nBuffer length: 4.960 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1721043227.204"[ shape=plaintext ] ;
+ }->"laser_mount_link";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1721043227.204"[ shape=plaintext ] ;
+ }->"sensor_head/yaw/base";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1721043227.204"[ shape=plaintext ] ;
+ }->"sensor_head/pitch/base";
+}

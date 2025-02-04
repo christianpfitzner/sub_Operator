@@ -1,0 +1,7 @@
+int32 track_right_speed
+int32 track_left_speed
+int32 flipper_front_right_position
+int32 flipper_front_left_position
+int32 flipper_rear_right_position
+int32 flipper_rear_left_position
+uint16 delta_t

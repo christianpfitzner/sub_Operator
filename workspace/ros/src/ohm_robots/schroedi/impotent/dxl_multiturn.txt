@@ -1,0 +1,2 @@
+roslaunch dynamixel_workbench_single_manager single_manager.launch  //to launch the single manager. Dxl needs to be alone on the bus
+rosrun dynamixel_workbench_single_manager_gui dynamixel_workbench_single_manager_gui //to start the configuration gui

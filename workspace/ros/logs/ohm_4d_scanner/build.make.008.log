@@ -1,0 +1,4 @@
+[ 33%] Built target line_scanner
+[ 44%] Built target ohm_4d_scanner_gencfg
+[ 66%] Built target tf_node
+[100%] Built target fd_scanner

@@ -1,0 +1,8 @@
+Symlinking /home/user/workspace/ros/devel/share/ros_h264_streamer/cmake/ros_h264_streamerConfig.cmake
+Symlinking /home/user/workspace/ros/devel/share/ros_h264_streamer/cmake/ros_h264_streamerConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/lib/libros_h264_streamer.so
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/ros_h264_streamer.pc
+Symlinking /home/user/workspace/ros/devel/lib/ros_h264_streamer/testStreamer
+Symlinking /home/user/workspace/ros/devel/lib/ros_h264_streamer/mkv_recorder
+Symlinking /home/user/workspace/ros/devel/lib/ros_h264_streamer/testReceiver
+Symlinking /home/user/workspace/ros/devel/lib/ros_h264_streamer/testEncoderDecoder

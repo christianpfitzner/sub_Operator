@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty",SUBSYSTEMS=="usb",ATTRS{product}=="SensorGripperDevice", MODE="0666", SYMLINK+="sensorgripper"

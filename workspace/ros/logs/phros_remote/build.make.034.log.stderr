@@ -1,0 +1,58 @@
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDriveReverse::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  118 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  130 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:136:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperUp[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  136 |   if(msg->button(_btnActions.[01;31m[KflipperUp[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:138:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperDown[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  138 |   else if(msg->button(_btnActions.[01;31m[KflipperDown[m[K).state())
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:140:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperBl[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  140 |   if(msg->button(_btnActions.[01;31m[KflipperBl[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:142:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperBr[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  142 |   if(msg->button(_btnActions.[01;31m[KflipperBr[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:144:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperFl[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  144 |   if(msg->button(_btnActions.[01;31m[KflipperFl[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:146:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperFr[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  146 |   if(msg->button(_btnActions.[01;31m[KflipperFr[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/menu_test.dir/build.make:367: CMakeFiles/menu_test.dir/src/mappers/MapperDriveReverse.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/menu_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:[m[K In member function ‘[01m[Kvirtual void phros_remote::MapperDriveReverse::map(std::shared_ptr<phros_remote::MapperPsPad>&)[m[K’:
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  118 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_flipper_preset_service[m[K’ was not declared in this scope
+  130 |     [01;31m[K_flipper_preset_service[m[K.call(srv);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:136:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperUp[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  136 |   if(msg->button(_btnActions.[01;31m[KflipperUp[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:138:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperDown[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  138 |   else if(msg->button(_btnActions.[01;31m[KflipperDown[m[K).state())
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:140:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperBl[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  140 |   if(msg->button(_btnActions.[01;31m[KflipperBl[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:142:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperBr[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  142 |   if(msg->button(_btnActions.[01;31m[KflipperBr[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:144:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperFl[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  144 |   if(msg->button(_btnActions.[01;31m[KflipperFl[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/phros_remote/src/mappers/MapperDriveReverse.cpp:146:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KflipperFr[m[K’ in ‘[01m[K((phros_remote::MapperDriveReverse*)this)->phros_remote::MapperDriveReverse::_btnActions[m[K’, which is of pointer type ‘[01m[Kphros_remote::MapperController::ButtonActions*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  146 |   if(msg->button(_btnActions.[01;31m[KflipperFr[m[K).state())
+      |                              [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/phros_remote.dir/build.make:324: CMakeFiles/phros_remote.dir/src/mappers/MapperDriveReverse.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:1147: CMakeFiles/phros_remote.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

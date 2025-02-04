@@ -1,0 +1,10 @@
+float32 r_5V
+float32 c_5V
+float32 r_12V
+float32 c_12V
+float32 r_24V
+float32 c_24V
+float32 r_48V
+float32 c_48V
+bool alarm_24V
+bool alarm_48V

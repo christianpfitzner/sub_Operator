@@ -1,0 +1,309 @@
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   40 |     MSG(const [01;31m[Kohm_can_interface[m[K::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |               [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   40 |     MSG[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |        [34m[K~[m[K                            [01;31m[K^[m[K
+      |                                     [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kconstructors may not be ref-qualified
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   40 |     MSG(const ohm_can_interface::CAN& [01;31m[Kmsg[m[K) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:168:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}[01;31m[K,[m[K _data_size(msg.data_size)   {}
+      |                                                                                                                                                                        [01;31m[K^[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_SDO.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   40 |     MSG(const [01;31m[Kohm_can_interface[m[K::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |               [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   40 |     MSG[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |        [34m[K~[m[K                            [01;31m[K^[m[K
+      |                                     [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kconstructors may not be ref-qualified
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   40 |     MSG(const ohm_can_interface::CAN& [01;31m[Kmsg[m[K) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:168:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}[01;31m[K,[m[K _data_size(msg.data_size)   {}
+      |                                                                                                                                                                        [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:46:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   46 |     operator [01;31m[Kohm_can_interface[m[K::CAN() const    {ohm_can_interface::CAN msg; msg.ID = _ID; msg.data = {_data[0], _data[1], _data[2], _data[3], _data[4], _data[5], _data[6], _data[7]}; msg.data_size = _data_size; return msg;}
+      |              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |              [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:46:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   46 |     operator [01;31m[Kohm_can_interface[m[K::CAN() const    {ohm_can_interface::CAN msg; msg.ID = _ID; msg.data = {_data[0], _data[1], _data[2], _data[3], _data[4], _data[5], _data[6], _data[7]}; msg.data_size = _data_size; return msg;}
+      |              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |              [32m[Kohm_can_interface_EXPORTS[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:30[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+  129 |     void    can_rx(const [01;31m[Kohm_can_interface[m[K::CAN::ConstPtr& can_data);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx(const ohm_can_interface::CAN[01;31m[K::[m[KConstPtr& can_data);
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K:[m[K[32m[K:[m[KConstPtr& can_data);
+      |                   [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  129 |     void    can_rx(const ohm_can_interface::[01;31m[KCAN[m[K::ConstPtr& can_data);
+      |                                             [01;31m[K^~~[m[K
+      |                                                [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:50:[m[K [01;31m[Kerror: [m[K‘[01m[KConstPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+  129 |     void    can_rx(const ohm_can_interface::CAN::[01;31m[KConstPtr[m[K& can_data);
+      |                                                  [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:30[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_SDO.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+  129 |     void    can_rx(const [01;31m[Kohm_can_interface[m[K::CAN::ConstPtr& can_data);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx(const ohm_can_interface::CAN[01;31m[K::[m[KConstPtr& can_data);
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K:[m[K[32m[K:[m[KConstPtr& can_data);
+      |                   [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  129 |     void    can_rx(const ohm_can_interface::[01;31m[KCAN[m[K::ConstPtr& can_data);
+      |                                             [01;31m[K^~~[m[K
+      |                                                [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:50:[m[K [01;31m[Kerror: [m[K‘[01m[KConstPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+  129 |     void    can_rx(const ohm_can_interface::CAN::[01;31m[KConstPtr[m[K& can_data);
+      |                                                  [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:31[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:[m[K In constructor ‘[01m[KCANopen::SDO::SDO()[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:33:39:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KMSG()[m[K’ is ambiguous
+   33 |    SDO() : _can_msg(), _sleep_ms(false[01;31m[K)[m[K   {}
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG(...)[m[K’
+   40 |     [01;36m[KMSG[m[K(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |     [01;36m[K^~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_OD.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:22:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG()[m[K’
+   22 |     [01;36m[KMSG[m[K()                                    :   _ID(0), _data{0, 0, 0, 0, 0, 0, 0, 0}, _data_size(0) {}
+      |     [01;36m[K^~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:31[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_SDO.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:[m[K In constructor ‘[01m[KCANopen::SDO::SDO()[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:33:39:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KMSG()[m[K’ is ambiguous
+   33 |    SDO() : _can_msg(), _sleep_ms(false[01;31m[K)[m[K   {}
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_SDO.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG(...)[m[K’
+   40 |     [01;36m[KMSG[m[K(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |     [01;36m[K^~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_SDO.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:22:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG()[m[K’
+   22 |     [01;36m[KMSG[m[K()                                    :   _ID(0), _data{0, 0, 0, 0, 0, 0, 0, 0}, _data_size(0) {}
+      |     [01;36m[K^~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   40 |     MSG(const [01;31m[Kohm_can_interface[m[K::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |               [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   40 |     MSG[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |        [34m[K~[m[K                            [01;31m[K^[m[K
+      |                                     [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kconstructors may not be ref-qualified
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   40 |     MSG(const ohm_can_interface::CAN[01;31m[K&[m[K msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                     [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   40 |     MSG(const ohm_can_interface::CAN& [01;31m[Kmsg[m[K) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:168:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+   40 |     MSG(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}[01;31m[K,[m[K _data_size(msg.data_size)   {}
+      |                                                                                                                                                                        [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:46:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   46 |     operator [01;31m[Kohm_can_interface[m[K::CAN() const    {ohm_can_interface::CAN msg; msg.ID = _ID; msg.data = {_data[0], _data[1], _data[2], _data[3], _data[4], _data[5], _data[6], _data[7]}; msg.data_size = _data_size; return msg;}
+      |              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |              [32m[Kohm_can_interface_EXPORTS[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:30[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+  129 |     void    can_rx(const [01;31m[Kohm_can_interface[m[K::CAN::ConstPtr& can_data);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx(const ohm_can_interface::CAN[01;31m[K::[m[KConstPtr& can_data);
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  129 |     void    can_rx[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K:[m[K[32m[K:[m[KConstPtr& can_data);
+      |                   [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  129 |     void    can_rx(const ohm_can_interface::[01;31m[KCAN[m[K::ConstPtr& can_data);
+      |                                             [01;31m[K^~~[m[K
+      |                                                [32m[K;[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_manager.hpp:129:50:[m[K [01;31m[Kerror: [m[K‘[01m[KConstPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+  129 |     void    can_rx(const ohm_can_interface::CAN::[01;31m[KConstPtr[m[K& can_data);
+      |                                                  [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:31[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:[m[K In constructor ‘[01m[KCANopen::SDO::SDO()[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_SDO.hpp:33:39:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KMSG()[m[K’ is ambiguous
+   33 |    SDO() : _can_msg(), _sleep_ms(false[01;31m[K)[m[K   {}
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:40:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG(...)[m[K’
+   40 |     [01;36m[KMSG[m[K(const ohm_can_interface::CAN& msg) : _ID(msg.ID), _data{msg.data[0], msg.data[1], msg.data[2], msg.data[3], msg.data[4], msg.data[5], msg.data[6], msg.data[7]}, _data_size(msg.data_size)   {}
+      |     [01;36m[K^~~[m[K
+In file included from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:27[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen_msg.hpp:22:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCANopen::MSG::MSG()[m[K’
+   22 |     [01;36m[KMSG[m[K()                                    :   _ID(0), _data{0, 0, 0, 0, 0, 0, 0, 0}, _data_size(0) {}
+      |     [01;36m[K^~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:[m[K In member function ‘[01m[Kvoid CANopen::Manager::init(ros::NodeHandle&, double, bool, double)[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:80:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+   80 |       _can_publisher  =   node_handle.advertise<[01;31m[Kohm_can_interface[m[K::CAN>("can_interface/tx", 100);
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                 [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:80:39:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   80 |       _can_publisher  =   node_handle.[01;31m[Kadvertise<ohm_can_interface::CAN>[m[K("can_interface/tx", 100);
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:80:96:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(const char [17], int)[m[K’
+   80 |       _can_publisher  =   node_handle.advertise<ohm_can_interface::CAN>("can_interface/tx", 100[01;31m[K)[m[K;
+      |                                                                                                [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:14[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:80:96:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   80 |       _can_publisher  =   node_handle.advertise<ohm_can_interface::CAN>("can_interface/tx", 100[01;31m[K)[m[K;
+      |                                                                                                [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:14[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:80:96:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   80 |       _can_publisher  =   node_handle.advertise<ohm_can_interface::CAN>("can_interface/tx", 100[01;31m[K)[m[K;
+      |                                                                                                [01;31m[K^[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:81:39:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   81 |       _can_subscriber =   node_handle.[01;31m[Ksubscribe<ohm_can_interface::CAN>[m[K("can_interface/rx", 100, &CANopen::Manager::can_rx, this);
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:81:129:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe<ohm_can_interface>(const char [17], int, void (CANopen::Manager::*)(...), CANopen::Manager*)[m[K’
+   81 |       _can_subscriber =   node_handle.subscribe<ohm_can_interface::CAN>("can_interface/rx", 100, &CANopen::Manager::can_rx, this[01;31m[K)[m[K;
+      |                                                                                                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/include/ohm_can_interface/canopen.hpp:14[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:7[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  402 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  413 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  465 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  475 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  529 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  540 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  594 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  605 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)[m[K’
+  656 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)[m[K’
+  704 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  750 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  799 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:[m[K In member function ‘[01m[Kvoid CANopen::Manager::can_tx(const CANopen::MSG&)[m[K’:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:123:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ has not been declared
+  123 |       [01;31m[Kohm_can_interface[m[K::CAN message = static_cast<ohm_can_interface::CAN>(can_msg);
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:126:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+  126 |       [01;31m[Kmessage[m[K.header.stamp       = ros::Time::now();
+      |       [01;31m[K^~~~~~~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:[m[K At global scope:
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:250:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kohm_can_interface[m[K’ does not name a type; did you mean ‘[01m[Kohm_can_interface_EXPORTS[m[K’?
+  250 |   void Manager::can_rx(const [01;31m[Kohm_can_interface[m[K::CAN::ConstPtr& can_data) {
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                              [32m[Kohm_can_interface_EXPORTS[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:250:52:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  250 |   void Manager::can_rx(const ohm_can_interface::CAN[01;31m[K::[m[KConstPtr& can_data) {
+      |                                                    [01;31m[K^~[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:250:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  250 |   void Manager::can_rx[34m[K([m[Kconst ohm_can_interface::CAN[01;31m[K:[m[K[32m[K:[m[KConstPtr& can_data) {
+      |                       [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                    [32m[K)[m[K
+[01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_can_interface/src/canopen_manager.cpp:250:52:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  250 |   void Manager::can_rx(const ohm_can_interface::CAN[01;31m[K::[m[KConstPtr& can_data) {
+      |                                                    [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/ohm_can_interface.dir/build.make:102: CMakeFiles/ohm_can_interface.dir/src/canopen_SDO.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/ohm_can_interface.dir/build.make:63: CMakeFiles/ohm_can_interface.dir/src/canopen_OD.cpp.o] Error 1
+make[2]: *** [CMakeFiles/ohm_can_interface.dir/build.make:76: CMakeFiles/ohm_can_interface.dir/src/canopen_manager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:572: CMakeFiles/ohm_can_interface.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

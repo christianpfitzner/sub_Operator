@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="ohm_cortex" type="simon_statemachine" name="cortex"/>
+</launch>

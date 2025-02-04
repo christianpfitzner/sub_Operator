@@ -1,0 +1,9 @@
+<launch>
+  <group ns="ohm_robotarm">
+    <!-- Load configuration files to parameter server -->
+    <rosparam command="load" file="$(find ohm_robotarm)/config/gripper_interface.yaml"/>
+  
+    <!-- Launch gripper interface -->
+    <node pkg="ohm_robotarm" type="gripper_interface" output="screen" name="gripper_interface"/>
+  </group>
+</launch>

@@ -1,0 +1,7 @@
+ohm_sensors/co2sensor
+/home/user/workspace/ros/devel/.private/co2sensor/cmake.lock /home/user/workspace/ros/devel/./cmake.lock
+/home/user/workspace/ros/devel/.private/co2sensor/share/co2sensor/cmake/co2sensorConfig-version.cmake /home/user/workspace/ros/devel/share/co2sensor/cmake/co2sensorConfig-version.cmake
+/home/user/workspace/ros/devel/.private/co2sensor/share/co2sensor/cmake/co2sensorConfig.cmake /home/user/workspace/ros/devel/share/co2sensor/cmake/co2sensorConfig.cmake
+/home/user/workspace/ros/devel/.private/co2sensor/lib/libco2sensor.so /home/user/workspace/ros/devel/lib/libco2sensor.so
+/home/user/workspace/ros/devel/.private/co2sensor/lib/pkgconfig/co2sensor.pc /home/user/workspace/ros/devel/lib/pkgconfig/co2sensor.pc
+/home/user/workspace/ros/devel/.private/co2sensor/lib/co2sensor/co2sensor_node /home/user/workspace/ros/devel/lib/co2sensor/co2sensor_node

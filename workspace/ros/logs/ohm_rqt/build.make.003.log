@@ -1,0 +1,20 @@
+[  9%] Built target horizon2
+[ 18%] Built target horizon
+[ 25%] Built target health
+[ 32%] Built target exploration
+[ 32%] Built target std_msgs_generate_messages_eus
+[ 38%] Built target tiltscan
+[ 38%] Built target std_msgs_generate_messages_cpp
+[ 38%] Built target std_msgs_generate_messages_py
+[ 38%] Built target _ohm_rqt_generate_messages_check_deps_pu
+[ 38%] Built target std_msgs_generate_messages_nodejs
+[ 38%] Built target std_msgs_generate_messages_lisp
+[ 45%] Built target clock
+[ 46%] Built target ohm_rqt_generate_messages_lisp
+[ 49%] Built target ohm_rqt_generate_messages_py
+[ 56%] Built target co2
+[ 58%] Built target ohm_rqt_generate_messages_eus
+[ 60%] Built target ohm_rqt_generate_messages_nodejs
+[ 61%] Built target ohm_rqt_generate_messages_cpp
+[100%] Built target remote
+[100%] Built target ohm_rqt_generate_messages

@@ -1,0 +1,58 @@
+
+# MoveIt controller list
+controller_list:
+  - name: /ohm_robotarm/position_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+      - joint_7
+      
+# publish joint states
+joint_state_controller:
+   type:         joint_state_controller/JointStateController
+   publish_rate: 50.0
+      
+# Joint Trajectory Controller
+# For detailed explanations of parameter see http://wiki.ros.org/joint_trajectory_controller
+position_trajectory_controller:
+   type: position_controllers/JointTrajectoryController
+   joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+      - joint_7
+constraints:
+      goal_time: 5.0
+      stopped_position_tolerance: 0.1 # Defaults to 0.01
+      stopped_velocity_tolerance: 0.1 # Defaults to 0.01
+      joint_1:
+          trajectory: 0.10
+          goal:       0.10
+      joint_2:
+          trajectory: 0.10
+          goal:       0.10
+      joint_3:
+          trajectory: 0.10
+          goal:       0.10
+      joint_4:
+          trajectory: 0.10
+          goal:       0.10
+      joint_5:
+          trajectory: 0.10
+          goal:       0.10
+      joint_6:
+          trajectory: 0.10
+          goal:       0.10
+      joint_7:
+          trajectory: 0.10
+          goal:       0.10

@@ -1,0 +1,51 @@
+#Settings for the general Hardware Interface between ROS and the robotarm
+robotarm_general:
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
+      - joint_7
+      - joint_gripper_1
+      - joint_gripper_2
+    #Configuration of the joint elements
+    #Name            | ID | Type | Hardware-ID | Resolution | Direction | Offset |
+    joint_1:         [  0,    0,       10,         800000,       -1,        0    ]
+    joint_2:         [  1,    0,       20,         901120,        1,        0    ]
+    joint_3:         [  2,    0,       30,         800000,        1,        0    ]
+    joint_4:         [  3,    0,       40,         800000,        1,        0    ]
+    joint_5:         [  4,    0,      160,          4096,        -1,       2048  ]
+    joint_6:         [  5,    0,      161,          4096,         1,       2048  ]
+    joint_7:         [  6,    0,      162,          4096,         1,       4096  ]
+    joint_gripper_1: [  7,    0,      163,          4096,        -1,       2048  ]
+    joint_gripper_2: [  8,    0,      164,          4096,        -1,       2048  ]
+  
+      #Name            | ID | Type | Hardware-ID | Resolution | Direction | Offset |
+#    joint_1:         [  0,    0,       10,         800000,       -1,        0    ]
+#    joint_2:         [  1,    0,       20,         901120,       -1,        0    ]
+#    joint_3:         [  2,    0,       30,         800000,        1,        0    ]
+#    joint_4:         [  3,    0,       40,         800000,        1,        0    ]
+#    joint_5:         [  4,    0,      160,          4096,        -1,       2048  ]
+#    joint_6:         [  5,    0,      161,          4096,         1,       2048  ]
+#    joint_7:         [  6,    0,      162,          4096,         1,       4096  ]
+#    joint_gripper_1: [  7,    0,      163,          4096,        -1,       2048  ]
+#    joint_gripper_2: [  8,    0,      164,          4096,        -1,       2048  ]
+  
+  # Resolution joint_2 before = original = 819200  
+#Joint-Type: 0: Simulated drives
+sim_drives:
+    update_rate: 100.0
+
+#Joint-Type: 1: Harmonic Drives controlled by Elmo Motion Control via CANopen
+elmo_drives:
+    update_rate: 20.0
+    canopen_update_rate: 450.0
+
+#Joint-Type: 2: Dynamixel Drives
+dynamixel_drives:
+    update_rate: 20.0
+    
+joint_state_publisher:
+    update_rate: 50.0

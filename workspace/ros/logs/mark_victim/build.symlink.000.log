@@ -1,0 +1,4 @@
+Symlinking /home/user/workspace/ros/devel/share/mark_victim/cmake/mark_victimConfig-version.cmake
+Symlinking /home/user/workspace/ros/devel/share/mark_victim/cmake/mark_victimConfig.cmake
+Symlinking /home/user/workspace/ros/devel/lib/mark_victim/mark
+Symlinking /home/user/workspace/ros/devel/lib/pkgconfig/mark_victim.pc

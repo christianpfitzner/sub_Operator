@@ -1,0 +1,11 @@
+In file included from [01m[K/opt/ros/noetic/include/trac_ik/trac_ik.hpp:35[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_robotarm/include/ohm_robotarm/gripper_interface.hpp:17[m[K,
+                 from [01m[K/home/user/workspace/ros/src/ohm_manipulation/ohm_robotarm/src/gripper_interface.cpp:7[m[K:
+[01m[K/opt/ros/noetic/include/trac_ik/nlopt_ik.hpp:35:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+   35 | #include [01;31m[K<nlopt.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/gripper_interface.dir/build.make:63: CMakeFiles/gripper_interface.dir/src/gripper_interface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1174: CMakeFiles/gripper_interface.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

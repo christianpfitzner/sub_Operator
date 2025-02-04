@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+   <!-- start joy stick driver-->
+	<node pkg="joy"	    type="joy_node"        name="joy_node">
+		<param name="autorepeat_rate" value="20.0"/>
+        <param name="dev" value="/dev/input/js0"/>
+	</node>
+	
+	<!--	<node pkg = "ohm_schr_remote" type = "schr_remote" name = "schr_remote" output = "screen">
+          <param name="topic_twist" type = "string" value = "/vel/cmd"/>
+          <param name="speed_flipper_manual" type="double" value="2.4"/>
+          <param name = "homing_yaw_for" type = "double" value = "0.75" />
+          <param name = "homing_pitch_for" type = "double" value = "0.22" />
+          <param name = "homing_yaw_rev" type = "double" value = "3.12" />
+          <param name = "homing_pitch_rev" type = "double" value = "0.4" />
+          <param name = "topic_cam_gripper" type = "string" value = "/gripper/color/image_raw"/>
+	</node>-->
+
+	<arg name="debug" default="false" />
+    <arg unless="$(arg debug)" name="launch_prefix" value="" />
+    <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+    <arg name="config" default="true" />
+    <arg unless="$(arg config)" name="command_args" value="" />
+    <arg     if="$(arg config)" name="command_args" value="-d $(find operator)/launch/manual.rviz" /> 
+ 
+    <node name="$(anon rviz)" pkg="rviz" type="rviz" respawn="false"
+     args="$(arg command_args)" output="screen">
+    </node>
+    <!-- <node name="map_decompression" pkg="ohm_map_compression" type="map-decompression">
+      <param name="topic_map_compressed" type="string" value="/map_compression/map"/>
+      <param name="topic_map"            type="string" value="me/map"                 />
+      <param name="image_transport"      type="string" value="compressed"          />
+    </node>
+     <node name="reconfigure" pkg="dynamic_reconfigure" type="dynparam"
+        args="set_from_parameters map_compression/map/compressed">
+    <param name="format" type="string" value="png" />
+    </node>--> 
+    
+    
+ <!--  <include file="$(find operator)/launch/audio_operator.launch"/> -->
+  
+ <!-- <node name="map_decompression" pkg="ohm_map_compression" type="map-decompression">
+      <param name="topic_map_compressed" type="string" value="/map_compression/map"/>
+      <param name="topic_map"            type="string" value="me/map"                 />
+      <param name="image_transport"      type="string" value="compressed"          />
+    </node> -->
+   
+    
+</launch>

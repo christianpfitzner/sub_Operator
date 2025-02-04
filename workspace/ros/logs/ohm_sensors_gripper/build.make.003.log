@@ -1,0 +1,27 @@
+[  2%] [34m[1mGenerating dynamic reconfigure files from cfg/sensor_gripper.cfg: /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/sensor_gripperConfig.h /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/python3/dist-packages/ohm_sensors_gripper/cfg/sensor_gripperConfig.py[0m
+Generating reconfiguration files for SensorGripper in ohm_sensors_gripper
+Wrote header file in /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/include/ohm_sensors_gripper/SensorGripperConfig.h
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_error_detection
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[  2%] Built target ohm_sensors_gripper_gencfg
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_single_obj
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_objects
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_tof_sensors
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_from_light_control
+[  2%] Built target _ohm_sensors_gripper_generate_messages_check_deps_to_light_control
+[  2%] Built target sensor_msgs_generate_messages_py
+[  9%] Built target tof_calibration_node
+[  9%] Built target sensor_msgs_generate_messages_nodejs
+[  9%] Built target sensor_msgs_generate_messages_eus
+[  9%] Built target sensor_msgs_generate_messages_lisp
+[ 26%] Built target ohm_sensors_gripper_generate_messages_py
+[ 41%] Built target ohm_sensors_gripper_generate_messages_cpp
+[ 56%] Built target ohm_sensors_gripper_generate_messages_nodejs
+[ 73%] Built target ohm_sensors_gripper_generate_messages_eus
+[ 87%] Built target ohm_sensors_gripper_generate_messages_lisp
+[35m[1mScanning dependencies of target serial_node[0m
+[ 92%] Built target light_control_node
+[ 92%] Built target ohm_sensors_gripper_generate_messages
+[ 95%] [32mBuilding CXX object CMakeFiles/serial_node.dir/src/sensor_gripper_serial_node.cpp.o[0m
+[ 97%] [32m[1mLinking CXX executable /home/user/workspace/ros/devel/.private/ohm_sensors_gripper/lib/ohm_sensors_gripper/serial_node[0m
+[100%] Built target serial_node

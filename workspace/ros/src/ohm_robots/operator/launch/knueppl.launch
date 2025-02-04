@@ -1,0 +1,7 @@
+<launch>
+    <node name="map_decompression" pkg="ohm_map_compression" type="map-decompression">
+      <param name="topic_map_compressed" type="string" value="/map_compression/map"/>
+      <param name="topic_map"            type="string" value="knueppl/map"         />
+      <param name="image_transport"      type="string" value="compressed"          />
+    </node>
+</launch>
